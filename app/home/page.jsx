@@ -2,6 +2,8 @@ import Header from "@/components/header";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import CardReadMore from "@/components/card";
+import VideoCard from "@/components/video-card";
+import Footer from "@/components/footer";
 
 export default function HomePage() {
     return (
@@ -26,40 +28,52 @@ export default function HomePage() {
             </section>
 
             <section className="flex flex-row main-bg">
-                <div className="px-10 py-10">
+                <div className=" py-10">
                     <CardReadMore
                         title={"Developteam augement tation"}
                         items={[
                             "Solutions tailored to specific business needs",
                             "Innovative approaches to problem-solving",
-                            "Seamless integration with existing systems"
-                        ]}
-                    />
-                </div>
-                <div className="px-10 py-10">
-                    <CardReadMore
-                        title={"Custom Title Here"}
-                        items={[
+                            "Seamless integration with existing systems",
                             "Solutions tailored to specific business needs",
                             "Innovative approaches to problem-solving",
                             "Seamless integration with existing systems"
                         ]}
                     />
                 </div>
-                <div className="px-10 py-10">
+                <div className="py-10">
                     <CardReadMore
-                        title={"Custom Title Here"}
+                        title={"Developteam augement tation"}
                         items={[
+                            "Solutions tailored to specific business needs",
+                            "Innovative approaches to problem-solving",
+                            "Seamless integration with existing systems",
                             "Solutions tailored to specific business needs",
                             "Innovative approaches to problem-solving",
                             "Seamless integration with existing systems"
                         ]}
                     />
                 </div>
-                <div className="px-10 py-10">
+                <div className="py-10">
                     <CardReadMore
-                        title={"Custom Title Here"}
+                        title={"Developteam augement tation"}
                         items={[
+                            "Solutions tailored to specific business needs",
+                            "Innovative approaches to problem-solving",
+                            "Seamless integration with existing systems",
+                            "Solutions tailored to specific business needs",
+                            "Innovative approaches to problem-solving",
+                            "Seamless integration with existing systems"
+                        ]}
+                    />
+                </div>
+                <div className=" py-10">
+                    <CardReadMore
+                        title={"Developteam augement tation"}
+                        items={[
+                            "Solutions tailored to specific business needs",
+                            "Innovative approaches to problem-solving",
+                            "Seamless integration with existing systems",
                             "Solutions tailored to specific business needs",
                             "Innovative approaches to problem-solving",
                             "Seamless integration with existing systems"
@@ -70,8 +84,10 @@ export default function HomePage() {
 
 
             </section>
-
-
+            <section className="main-bg py-12">
+                <VideoCard />
+            </section>
+<Footer/>
         </>
     );
 }
