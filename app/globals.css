@@ -84,3 +84,10 @@
 canvas {
   display: inline-block;
 }
+
+.bg-gradient {
+  background: linear-gradient(to right, gray, #ca875a, #c6cc9e, #f6ac7a);
+}
+.bg-gradient-orrange {
+  background: linear-gradient(to right, rgb(235, 154, 22), #ca875a, #d56508, #f6ac7a);
+}

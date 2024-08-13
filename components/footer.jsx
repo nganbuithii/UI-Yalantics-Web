@@ -12,7 +12,7 @@ import { FaGithub } from "react-icons/fa6"
 export default function Footer() {
     return (
         <>
-            <footer className="main-bg flex flex-row pt-10 pb-10 text-white">
+            <footer className="main-bg flex flex-row pt-10  text-white pb-28">
                 <section className="w-1/4 ml-14 ">
                     <div>
                         <p className="font-bold text-2xl">Services</p>
@@ -101,7 +101,7 @@ export default function Footer() {
                 </section>
                 <section className="w-1/4">
                     <div>
-                        <Button className="border-2 main-bg border-orange-500 text-white hover:bg-orange-600 px-6 py-7 rounded-full text-lg font-semibold transition duration-300 ease-in-out">
+                        <Button className="border-2 main-bg border-orange-500 text-white hover:bg-orange-600 px-12 py-7 rounded-full text-lg font-semibold transition duration-300 ease-in-out">
                             CONTACT US
                         </Button>
 
