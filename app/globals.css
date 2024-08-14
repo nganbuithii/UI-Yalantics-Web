@@ -91,3 +91,11 @@ canvas {
 .bg-gradient-orrange {
   background: linear-gradient(to right, rgb(235, 154, 22), #ca875a, #d56508, #f6ac7a);
 }
+
+.services-first-screen-lottie {
+  inset: 0px;
+  z-index: 0;
+  opacity: .4;
+  display: block;
+  position: absolute;
+}

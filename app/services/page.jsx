@@ -1,3 +1,4 @@
+'use client'
 import FAQ from "@/components/faq-item";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
@@ -5,7 +6,12 @@ import Image from "next/image";
 import ContactForm from "../home/ContactForm";
 import OurOffice from "../home/out-office";
 import ItemExpertise from "./item-expertise";
+import Card from "./Card";
+import CardCollab from "./CardCollab";
 import Banner from "@/components/banner";
+import BreadCrum from "@/components/BreadCrum";
+import { BiSkipNextCircle, BiSolidSkipNextCircle } from "react-icons/bi";
+import CaseStudies from "../home/CaseSudies";
 
 export default function ServicesPage() {
     return (
@@ -28,14 +34,47 @@ export default function ServicesPage() {
 
                 <div className="text-center px-4 relative z-20">
                     <div className="flex flex-row items-center justify-center">
-                        <p className="text-orange-500 font-bold text-7xl">Yalantics</p>
-                        <p className="font-bold text-white text-7xl">Services</p>
+                        <p className="text-orange-500  text-7xl">Yalantics </p>
+                        <p className="font-bold text-white text-7xl"> Services</p>
                     </div>
                     <p className="text-white mt-4 w-1/2 mx-auto text-xl">
                         As an all-around software engineering and outsourcing company, we can help you at any stage of development. Whether you’re creating your product from scratch, modernizing it, or continuously improving it, we have the expertise your business requires.
                     </p>
                 </div>
+                <BreadCrum className="absolute top-1/4 left-5" title1="YALANTICS" title2="SERVICES"/>
             </section>
+
+            {/* 
+            Card */}
+            <section className="main-bg pb-20">
+                <div className="flex flex-wrap">
+                    <Card className="w-[23%]" title="Custom software develope" content="Build a custom solution tailored to your business needs by engaging our domain expertise, extensive technology stack, custom SDLC, and constraint management framework." />
+                    <Card className="w-[23%]" title="Custom software develope" content="Build a custom solution tailored to your business needs by engaging our domain expertise, extensive technology stack, custom SDLC, and constraint management framework." />
+                    <Card className="w-[23%]" title="Custom software develope" content="Build a custom solution tailored to your business needs by engaging our domain expertise, extensive technology stack, custom SDLC, and constraint management framework." />
+                    <Card className="w-[23%]" title="Custom software develope" content="Build a custom solution tailored to your business needs by engaging our domain expertise, extensive technology stack, custom SDLC, and constraint management framework." />
+                    <Card className="w-[23%]" title="Custom software develope" content="Build a custom solution tailored to your business needs by engaging our domain expertise, extensive technology stack, custom SDLC, and constraint management framework." />
+                  
+                </div>
+            </section>
+
+            {/* Our collaboration and
+engagement models */}
+            <section>
+                <div className="pt-24 bg-[#f5f5f5] pb-20">
+                    <h1 className="text-7xl text-center pb-12 w-1/2 mx-auto">Our collaboration and
+                        engagement <span className="text-orange-500">models</span></h1>
+                        <div className="flex flex-row flex-wrap justify-center">
+                            <CardCollab className="w-[30%]" title="Time and material " items={["Long-term project and dynamic requirements","Scope of work is not fully specified","May need to alter the scope and the workload"]}/>
+                            <CardCollab className="w-[30%]" title="Time and material " items={["Long-term project and dynamic requirements","Scope of work is not fully specified","May need to alter the scope and the workload"]}/>
+                            <CardCollab className="w-[30%]" title="Time and material " items={["Long-term project and dynamic requirements","Scope of work is not fully specified","May need to alter the scope and the workload"]}/>
+                            <CardCollab className="w-[30%]" title="Time and material " items={["Long-term project and dynamic requirements","Scope of work is not fully specified","May need to alter the scope and the workload"]}/>
+                            <CardCollab className="w-[30%]" title="Time and material " items={["Long-term project and dynamic requirements","Scope of work is not fully specified","May need to alter the scope and the workload"]}/>
+                           
+                        
+                        </div>
+                </div>
+            </section>
+
             {/* banner */}
             <section className="p-8">
                 <Banner className="bg-gradient-orrange" title="LOOKING FOR A RELIABLE SOFTWARE DEVELOPMENT COMPANY?
@@ -43,16 +82,16 @@ export default function ServicesPage() {
             </section>
 
             {/* Expertise and competencies */}
-            <section className="main-bg">
-                <div className="flex flex-row justify-center">
-                    <p className="text-orange-500 text-5xl">Expertise </p>
-                    <p className="text-white text-5xl ml-2"> and competencies</p>
+            <section className="main-bg pt-20">
+                <div className="flex flex-row justify-center pb-9">
+                    <p className="text-orange-500 text-6xl">Expertise </p>
+                    <p className="text-white text-6xl ml-2"> and competencies</p>
                 </div>
 
-                <div className="flex flex-row bg-gray-200 m-11 p-11">
-                    <div className="width-[20%]">
-                        <p>Technology excellence</p>
-                        <p>Create and enhance your software product with powerful and cost-effective technology</p>
+                <div className="flex flex-row bg-[#24262c] m-11 p-11">
+                    <div className="w-[20%]">
+                        <p className="text-orange-600 text-2xl">Technology excellence</p>
+                        <p className="text-white tracking-wide mt-3">Create and enhance your software product with powerful and cost-effective technology</p>
                     </div>
                     <div className="w-[40%] mx-3">
                         <ItemExpertise title="IoT Service" />
@@ -74,7 +113,87 @@ export default function ServicesPage() {
 
             </section>
 
+            <section className="main-bg ">
+                <div className="flex flex-row pt-20 pl-8 pb-12">
+                    <h1 className="text-6xl text-orange-500 w-1/2">Case Studies <span className="text-white">of solutions
+we’ve delivered</span></h1>
+                    <div className="flex flex-row ml-auto space-x-4 pr-10">
+                        <BiSkipNextCircle className="text-7xl text-gray-100" />
+                        <BiSolidSkipNextCircle className="text-7xl text-gray-100" />
+                    </div>
+                </div>
+                <div className="flex flex-row ml-10">
 
+                    <CaseStudies
+                        title={"Developteam augement tation"}
+                        items={[
+                            "Solutions tailored to specific business needs",
+                            "Innovative approaches to problem-solving",
+                            "Seamless integration with existing systems",
+                            "Solutions tailored to specific business needs",
+                            "Innovative approaches to problem-solving",
+                            "Seamless integration with existing systems"
+                        ]}
+                    />
+                    <CaseStudies
+                        title={"Developteam augement tation"}
+                        items={[
+                            "Solutions tailored to specific business needs",
+                            "Innovative approaches to problem-solving",
+                            "Seamless integration with existing systems",
+                            "Solutions tailored to specific business needs",
+                            "Innovative approaches to problem-solving",
+                            "Seamless integration with existing systems"
+                        ]}
+                    />
+                    <CaseStudies
+                        title={"Developteam augement tation"}
+                        items={[
+                            "Solutions tailored to specific business needs",
+                            "Innovative approaches to problem-solving",
+                            "Seamless integration with existing systems",
+                            "Solutions tailored to specific business needs",
+                            "Innovative approaches to problem-solving",
+                            "Seamless integration with existing systems"
+                        ]}
+                    />
+                    <CaseStudies
+                        title={"Developteam augement tation"}
+                        items={[
+                            "Solutions tailored to specific business needs",
+                            "Innovative approaches to problem-solving",
+                            "Seamless integration with existing systems",
+                            "Solutions tailored to specific business needs",
+                            "Innovative approaches to problem-solving",
+                            "Seamless integration with existing systems"
+                        ]}
+                    />
+                    <CaseStudies
+                        title={"Developteam augement tation"}
+                        items={[
+                            "Solutions tailored to specific business needs",
+                            "Innovative approaches to problem-solving",
+                            "Seamless integration with existing systems",
+                            "Solutions tailored to specific business needs",
+                            "Innovative approaches to problem-solving",
+                            "Seamless integration with existing systems"
+                        ]}
+                    />
+                    <CaseStudies
+                        title={"Developteam augement tation"}
+                        items={[
+                            "Solutions tailored to specific business needs",
+                            "Innovative approaches to problem-solving",
+                            "Seamless integration with existing systems",
+                            "Solutions tailored to specific business needs",
+                            "Innovative approaches to problem-solving",
+                            "Seamless integration with existing systems"
+                        ]}
+                    />
+
+                </div>
+
+            </section>
             {/* FAQ */}
             <section className="bg-pink-100 justify-center pb-20">
                 <h1 className=" text-center text-7xl text-black font-light pb-8 pt-20">FAQ</h1>
