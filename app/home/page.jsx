@@ -8,41 +8,18 @@ import Footer from "@/components/footer";
 import Banner from "@/components/banner";
 import OurOffice from "./out-office";
 import ContactForm from "./ContactForm";
-import CaseStudies from "./CaseSudies";
-import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
-} from "@/components/ui/carousel"
-
-import {
-    Tooltip,
-    TooltipContent,
-    TooltipProvider,
-    TooltipTrigger,
-} from "@/components/ui/tooltip"
+import CaseStudiesList from "./CaseStudiesList";
 import FAQ from "@/components/faq-item";
 import AboutUs from "./about";
-
-import { RiArrowDropDownLine, RiArrowDropUpLine } from "react-icons/ri";
-import { MdLocationOn } from "react-icons/md";
-import { useState } from "react";
-import { IoAttachSharp } from "react-icons/io5";
-import { Checkbox } from "@/components/ui/checkbox";
-import { BiSkipNextCircle, BiSolidSkipNextCircle } from "react-icons/bi";
-
-
 export default function HomePage() {
 
     return (
         <>
             <Header />
-            <section className="main-bg flex mt-14">
+            <section className="main-bg flex pt-14 ">
                 <div className="w-3/5 p-5 mt-32"> {/* 60% chiều rộng */}
-                    <p className="text-orange-500 text-7xl">Software development</p>
-                    <p className="text-white text-7xl">company that delivers for</p>
+                    <p className="text-orange-500 text-7xl xl:text-[56px]">Software development</p>
+                    <p className="text-white text-7xl xl:text-[56px]">company that delivers for</p>
                     <div className="flex justify-center space-x-4 mt-5"> {/* Khoảng cách giữa các hình */}
                         <Image src="/images/a1.png" alt="logo1" width={250} height={250} className="main-bg"></Image>
                         <Image src="/images/a1.png" alt="logo2" width={250} height={250}></Image>
@@ -57,7 +34,7 @@ export default function HomePage() {
                 </div>
             </section>
 
-            <section className="flex flex-row main-bg">
+            <section className="flex flex-row main-bg xl:pt-40">
                 <div className=" py-10 pl-7">
                     <CardReadMore
                         title={"Developteam augement tation"}
@@ -114,8 +91,9 @@ export default function HomePage() {
 
 
             </section>
+            
             <section className="main-bg py-12 pt-40">
-                <h1 className="text-6xl text-white pb-11 px-7">Video testimonials
+                <h1 className="text-6xl text-white pb-11 px-7 xl:text-[56px]">Video testimonials
                 </h1>
                 <VideoCard />
             </section>
@@ -132,88 +110,7 @@ export default function HomePage() {
                 </div>
             </section>
 
-            {/* Case studies */}
-            <section className="main-bg ">
-                <div className="flex flex-row pt-20 pl-8 pb-12">
-                    <h1 className="text-6xl text-white ">Case Studies</h1>
-                    <div className="flex flex-row ml-auto space-x-4 pr-10">
-                        <BiSkipNextCircle className="text-7xl text-gray-100" />
-                        <BiSolidSkipNextCircle className="text-7xl text-gray-100" />
-                    </div>
-                </div>
-                <div className="flex flex-row ml-10">
-
-                    <CaseStudies
-                        title={"Developteam augement tation"}
-                        items={[
-                            "Solutions tailored to specific business needs",
-                            "Innovative approaches to problem-solving",
-                            "Seamless integration with existing systems",
-                            "Solutions tailored to specific business needs",
-                            "Innovative approaches to problem-solving",
-                            "Seamless integration with existing systems"
-                        ]}
-                    />
-                    <CaseStudies
-                        title={"Developteam augement tation"}
-                        items={[
-                            "Solutions tailored to specific business needs",
-                            "Innovative approaches to problem-solving",
-                            "Seamless integration with existing systems",
-                            "Solutions tailored to specific business needs",
-                            "Innovative approaches to problem-solving",
-                            "Seamless integration with existing systems"
-                        ]}
-                    />
-                    <CaseStudies
-                        title={"Developteam augement tation"}
-                        items={[
-                            "Solutions tailored to specific business needs",
-                            "Innovative approaches to problem-solving",
-                            "Seamless integration with existing systems",
-                            "Solutions tailored to specific business needs",
-                            "Innovative approaches to problem-solving",
-                            "Seamless integration with existing systems"
-                        ]}
-                    />
-                    <CaseStudies
-                        title={"Developteam augement tation"}
-                        items={[
-                            "Solutions tailored to specific business needs",
-                            "Innovative approaches to problem-solving",
-                            "Seamless integration with existing systems",
-                            "Solutions tailored to specific business needs",
-                            "Innovative approaches to problem-solving",
-                            "Seamless integration with existing systems"
-                        ]}
-                    />
-                    <CaseStudies
-                        title={"Developteam augement tation"}
-                        items={[
-                            "Solutions tailored to specific business needs",
-                            "Innovative approaches to problem-solving",
-                            "Seamless integration with existing systems",
-                            "Solutions tailored to specific business needs",
-                            "Innovative approaches to problem-solving",
-                            "Seamless integration with existing systems"
-                        ]}
-                    />
-                    <CaseStudies
-                        title={"Developteam augement tation"}
-                        items={[
-                            "Solutions tailored to specific business needs",
-                            "Innovative approaches to problem-solving",
-                            "Seamless integration with existing systems",
-                            "Solutions tailored to specific business needs",
-                            "Innovative approaches to problem-solving",
-                            "Seamless integration with existing systems"
-                        ]}
-                    />
-
-                </div>
-
-            </section>
-
+            <CaseStudiesList/>
 
             <section className="p-8">
                 <Banner className="bg-gradient" title="NOT SURE WHICH ENGAGEMENT MODEL IS BEST FOR MEETING YOUR BUSINESS OBJECTIVES?
@@ -285,8 +182,9 @@ export default function HomePage() {
                 "/>
             </section>
 
-            <section className="flex flex-row bg-[url('/images/bg-foot.png')] bg-cover bg-center pt-20 px-20">
-                <div className="w-1/2 bg-white p-6 rounded-lg shadow-lg mx-10">
+            <section className="flex flex-row bg-[url('/images/bg-foot.png')] bg-cover bg-center pt-20 px-20
+            xl:pt-15 xl:px-0">
+                <div className="w-1/2 bg-white p-6 rounded-lg shadow-lg mx-10 ">
                     <ContactForm />
                 </div>
 
@@ -306,10 +204,10 @@ export default function HomePage() {
                             <p className="py-5">year of experience</p>
                         </div>
                     </div>
-                    <div className="flex flex-row justify-around pb-8">
-                        <Image src="/images/kpmg.svg" width={250} height={250}></Image>
-                        <Image src="/images/toyota.svg" width={250} height={250}></Image>
-                        <Image src="/images/hom.svg" width={250} height={250}></Image>
+                    <div className="flex flex-row justify-around pb-8 flex-wrap">
+                        <Image src="/images/kpmg.svg" width={250} height={250} className="xl:w-1/2"></Image>
+                        <Image src="/images/toyota.svg" width={250} height={250} className="xl:w-1/2"></Image>
+                        <Image src="/images/hom.svg" width={250} height={250} className="xl:w-1/2"></Image>
                     </div>
                     <hr></hr>
                     <div className="flex flex-row justify-around pt-10">

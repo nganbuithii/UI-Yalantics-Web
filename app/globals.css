@@ -99,3 +99,44 @@ canvas {
   display: block;
   position: absolute;
 }
+/* blur case studies */
+.case-studies-list.blur::before {
+  content: "";
+  position: absolute;
+  right: -40px;
+  top: 0;
+  background: linear-gradient(270deg, #1c1e24 14.3%, rgba(28, 30, 36, 0) 100%);
+  height: 100%;
+  width: 16%;
+  z-index: 2;
+}
+
+/* 
+header hover */
+.link {
+  position: relative;
+  display: inline-block;
+  color: white;
+  overflow: hidden;
+  transition: color 0.3s ease;
+}
+
+.link::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -100%;
+  height: 2px;
+  width: 100%;
+  background: orange;
+  transition: left 0.3s ease;
+}
+
+.link:hover::before {
+  left: 0;
+}
+
+.link:hover {
+  color: orange;
+}
+/* end header hover */

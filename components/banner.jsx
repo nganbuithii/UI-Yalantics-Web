@@ -11,7 +11,7 @@ export default function Banner({ title, content, name, className }) {
                 <p className="text-white mt-1.5">{content}</p>
             </div>
             <div className="w-1/6">
-                <Button className="text-white bg-transparent border-2 text-xl duration-300 ease-in-out group-hover:text-orange-600 rounded-full px-10 py-8">
+                <Button className="text-white bg-transparent border-2 text-xl duration-300 ease-in-out group-hover:text-orange-600 rounded-full px-10 py-8 xl:text-[16px]">
                     {name}
                 </Button>
             </div>

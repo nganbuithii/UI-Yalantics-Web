@@ -1,7 +1,8 @@
 import Image from "next/image";
-import { FaPlay } from "react-icons/fa";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { MdPlayCircleFilled, MdOutlineNavigateNext } from "react-icons/md";
 import { IoChevronBackOutline } from "react-icons/io5";
-import { MdArrowBackIosNew, MdOutlineNavigateNext, MdPlayCircleFilled } from "react-icons/md";
+import { Navigation } from "swiper/modules";
 
 export default function VideoCard() {
     const testimonials = [
@@ -16,59 +17,110 @@ export default function VideoCard() {
             name: "Roy",
             title: "Partner at RAKwireless",
             company: "RAKwireless",
-            image: "/images/video.jpg",
+            image: "/images/video1.webp",
             feedback: "What triggered us was their remote collaboration practices as well as their experience in the IoT industry. Their strong technical experience helped us scale our platform and deliver great performance to our customers.",
         },
         {
             name: "Mark Boudreau",
             title: "Founder and COO at Healthfully",
             company: "Healthfully",
-            image: "/images/video.jpg",
+            image: "/images/video2.webp",
+            feedback: "Yalantis has been a great fit for us because of their experience, responsiveness, value, and time to market. From the very start, they’ve been able to staff an effective development team in no time and perform as expected.",
+        },
+        {
+            name: "Mark Boudreau",
+            title: "Founder and COO at Healthfully",
+            company: "Healthfully",
+            image: "/images/video3.webp",
+            feedback: "Yalantis has been a great fit for us because of their experience, responsiveness, value, and time to market. From the very start, they’ve been able to staff an effective development team in no time and perform as expected.",
+        },
+        {
+            name: "Mark Boudreau",
+            title: "Founder and COO at Healthfully",
+            company: "Healthfully",
+            image: "/images/video4.webp",
+            feedback: "Yalantis has been a great fit for us because of their experience, responsiveness, value, and time to market. From the very start, they’ve been able to staff an effective development team in no time and perform as expected.",
+        },
+        {
+            name: "Mark Boudreau",
+            title: "Founder and COO at Healthfully",
+            company: "Healthfully",
+            image: "/images/video5.webp",
             feedback: "Yalantis has been a great fit for us because of their experience, responsiveness, value, and time to market. From the very start, they’ve been able to staff an effective development team in no time and perform as expected.",
         },
     ];
 
     return (
-        <section className="bg-gray-900 py-12 pl-8 pr-32 relative">
-            <div className="flex justify-center space-x-8">
-                {testimonials.map((testimonial, index) => (
-                    <div key={index} className="bg-gray-800 rounded-lg overflow-hidden shadow-lg w-1/3">
-                        <div className="relative">
-                            <div >
-                                <Image
-                                    src={testimonial.image}
-                                    alt={testimonial.name}
-                                    width={401}
-                                    height={246}
-                                    className="w-full object-cover"
-                                />
-                            </div>
-                            <div className="absolute flex flex-row bottom-0">
-                                <div className=" flex items-center justify-center bg- bg-opacity-50">
-                                    <MdPlayCircleFilled className="text-white text-7xl" />
+        <>
+            <section className="bg-[#1c1e24] py-12 pl-8 pr-32 relative">
+                <Swiper
+                    modules={[Navigation]}
+                    slidesPerView={3}
+                    spaceBetween={30}
+                    slidesPerGroup={3} // Di chuyển 3 slide mỗi lần
+                    loop={true} // Bật tính năng lặp lại
+                    navigation={{
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    }}
+                    breakpoints={{
+                        640: {
+                            slidesPerView: 1,
+                            spaceBetween: 20,
+                            slidesPerGroup: 1, // Di chuyển 1 slide mỗi lần cho màn hình nhỏ
+                        },
+                        768: {
+                            slidesPerView: 2,
+                            spaceBetween: 30,
+                            slidesPerGroup: 2, // Di chuyển 2 slide mỗi lần cho màn hình trung bình
+                        },
+                        1024: {
+                            slidesPerView: 3,
+                            spaceBetween: 40,
+                            slidesPerGroup: 3, // Di chuyển 3 slide mỗi lần cho màn hình lớn
+                        },
+                    }}
+                >
+                    {testimonials.map((testimonial, index) => (
+                        <SwiperSlide key={index}>
+                            <div className="bg-[#1c1e24] rounded-lg overflow-hidden shadow-lg">
+                                <div className="relative">
+                                    <div>
+                                        <Image
+                                            src={testimonial.image}
+                                            alt={testimonial.name}
+                                            width={401}
+                                            height={246}
+                                            className="w-full object-cover"
+                                        />
+                                    </div>
+                                    <div className="absolute flex flex-row bottom-0 p-4">
+                                        <div className="flex items-center justify-center bg-opacity-50 rounded-full p-2">
+                                            <MdPlayCircleFilled className="text-white text-4xl" />
+                                        </div>
+                                        <div className="p-4 bg-transparent">
+                                            <h3 className="text-xl font-bold text-white">{testimonial.name}</h3>
+                                            <p className="text-lg font-semibold text-gray-400">{testimonial.title}</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div className="p-6 top-px bg-transparent">
-                                    <h3 className="text-xl font-bold text-white">{testimonial.name}</h3>
-                                    <p className="text-sm text-gray-400">{testimonial.title}</p>
+                                <div className="p-6 leading-loose tracking-wide">
+                                    <p className="mt-4 text-gray-300">{testimonial.feedback}</p>
                                 </div>
                             </div>
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
 
-
-                        </div>
-
-                        <div className="p-6 leading-loose tracking-wide	">
-                            <p className="mt-4 text-gray-300">{testimonial.feedback}</p>
-                        </div>
-
+                <div className="absolute right-0 top-1/2 transform -translate-y-1/2 flex flex-col space-y-4">
+                    <div className="swiper-button-next text-8xl text-white">
+                        <MdOutlineNavigateNext />
                     </div>
-
-                ))}
-
-            </div>
-            <div className=" absolute right-0 top-0 translate-y-40" >
-                <MdOutlineNavigateNext className="text-8xl text-white" />
-                <IoChevronBackOutline className="text-7xl text-white" />
-            </div>
-        </section>
+                    <div className="swiper-button-prev text-7xl text-white">
+                        <IoChevronBackOutline />
+                    </div>
+                </div>
+            </section>
+        </>
     );
 }

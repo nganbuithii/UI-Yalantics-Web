@@ -1,13 +1,13 @@
 import Image from "next/image";
 
 export default function AboutUs() {
-return (
-    <>
-      <section className=" py-12 pt-40">
+    return (
+        <>
+            <section className=" py-12 pt-40">
                 <div className="flex flex-row">
-                    <h1 className="text-6xl text-orange-600 pb-11 pl-8">About
+                    <h1 className="text-6xl text-orange-600 pb-11 pl-8 xl:text-[56px]">About
                     </h1>
-                    <h1 className="text-6xl text-black pb-11 pl-4">Us
+                    <h1 className="text-6xl text-black pb-11 pl-4 xl:text-[56px]">Us
                     </h1>
                 </div>
 
@@ -104,6 +104,6 @@ return (
                 </div>
 
             </section>
-    </>
-)
+        </>
+    )
 }
