@@ -3,8 +3,8 @@ import TooltipItem from '@/components/TooltipItem';
 
 const OurOffice = () => {
     return (
-        <div className='pt-10'>
-            <p className="text-xl text-gray-500 ">Our office</p>
+        <div className='pt-10 lg:pb-16'>
+            <p className="text-xl text-gray-500 lg:pb-16">Our office</p>
 
             <div className="flex flex-row justify-around">
                 <TooltipItem

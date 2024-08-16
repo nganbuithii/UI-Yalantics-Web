@@ -19,20 +19,20 @@ const config = {
     },
     extend: {
       screens: {
-        'xs': '400px',
+    
         'sm': '640px',
-        'xmd': '674px',
         'md': '768px',
         'lg': '1024px',
         'xl': '1280px',
-
-        'max-xl': { max: '1279px' },
-        'max-lg': { max: '1023px' },
-        'max-xmd': { max: '821px' },
-        'max-md': { max: '767px' },
-        'max-sm': { max: '639px' },
-        'max-xm': { max: '375px' },
-        'max-xs': { max: '375px' }
+        '2xl':'1536px',
+        // 'max-xxl': { max: '1821px' },
+        // 'max-xl': { max: '1279px' },
+        // 'max-lg': { max: '1023px' },
+        // 'max-xmd': { max: '821px' },
+        // 'max-md': { max: '767px' },
+        // 'max-sm': { max: '639px' },
+        // 'max-xm': { max: '375px' },
+        // 'max-xs': { max: '375px' }
       },
       colors: {
         border: "hsl(var(--border))",

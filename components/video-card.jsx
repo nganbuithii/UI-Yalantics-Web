@@ -75,9 +75,9 @@ export default function VideoCard() {
                             slidesPerGroup: 2, // Di chuyển 2 slide mỗi lần cho màn hình trung bình
                         },
                         1024: {
-                            slidesPerView: 3,
+                            slidesPerView: 2,
                             spaceBetween: 40,
-                            slidesPerGroup: 3, // Di chuyển 3 slide mỗi lần cho màn hình lớn
+                            slidesPerGroup: 2, // Di chuyển 3 slide mỗi lần cho màn hình lớn
                         },
                     }}
                 >
@@ -94,18 +94,21 @@ export default function VideoCard() {
                                             className="w-full object-cover"
                                         />
                                     </div>
-                                    <div className="absolute flex flex-row bottom-0 p-4">
+                                    <div className="absolute flex flex-row bottom-0 p-4
+                                    xl:-bottom-4 max-xl:-bottom-4 xl:p-1 max-xl:p-1">
                                         <div className="flex items-center justify-center bg-opacity-50 rounded-full p-2">
-                                            <MdPlayCircleFilled className="text-white text-4xl" />
+                                            <MdPlayCircleFilled className="text-white text-4xl
+                                            
+                                            " />
                                         </div>
                                         <div className="p-4 bg-transparent">
                                             <h3 className="text-xl font-bold text-white">{testimonial.name}</h3>
-                                            <p className="text-lg font-semibold text-gray-400">{testimonial.title}</p>
+                                            <p className="text-lg font-semibold text-gray-400 xl:text-[16px] max-xl:text-[16px]">{testimonial.title}</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="p-6 leading-loose tracking-wide">
-                                    <p className="mt-4 text-gray-300">{testimonial.feedback}</p>
+                                    <p className="mt-4 text-gray-300 xl:text-base max-xl:text-base">{testimonial.feedback}</p>
                                 </div>
                             </div>
                         </SwiperSlide>

@@ -138,15 +138,16 @@ const caseStudiesData = [
 
 export default function CaseStudiesList() {
     return (
-        <section className="relative main-bg ">
+        <section className="relative main-bg lg:pb-20">
             <div className="flex flex-row pt-20 pl-8 pb-12 ">
-                <h1 className="text-6xl text-white  xl:text-[56px]">Case Studies</h1>
-                <div className="flex flex-row ml-auto space-x-4 pr-10">
+                <h1 className="text-6xl text-white xl:text-[56px] max-xl:text-[56px] lg:text-[56px]">Case Studies</h1>
+                <div className="flex flex-row ml-auto space-x-4 lg:space-x-0 pr-10 lg:absolute lg:right-0 lg:top-1/2 lg:flex lg:pl-10
+                lg:flex-col">
                     <div className="swiper-button-prev">
-                        <IoIosArrowDropleft className="text-8xl xl:text-6xl text-gray-100 hover:text-orange-500" />
+                        <IoIosArrowDropleft className="text-8xl xl:text-6xl max-xl:text-6xl text-gray-100 hover:text-orange-500" />
                     </div>
                     <div className="swiper-button-next ml-4">
-                        <IoIosArrowDropright className="text-8xl xl:text-6xl text-gray-100 hover:text-orange-500" />
+                        <IoIosArrowDropright className="text-8xl  xl:text-6xl max-xl:text-6xl text-gray-100 hover:text-orange-500" />
                     </div>
                 </div>
             </div>
@@ -158,7 +159,15 @@ export default function CaseStudiesList() {
                     prevEl: '.swiper-button-prev'
                 }}
                 modules={[Navigation]}
-                className="flex flex-row case-studies"
+                className="flex flex-row case-studies lg:w-[80%] lg:justify-normal lg:pb-20"
+                breakpoints={{
+        
+                    1024: {
+                        slidesPerView: 2,
+                        spaceBetween: 40,
+                        slidesPerGroup: 1, 
+                    },
+                }}
             >
                 {caseStudiesData.map((data, index) => (
                     <SwiperSlide key={index} className="relative p-0 "> 

@@ -15,17 +15,17 @@ export default function CaseStudies({ title, items = [], className, image }) {
                     <p className="leading-6 tracking-wide text-xl">{item}</p>
                 </div>
             ))}
-            <Button className="relative text-white bg-transparent px-6 py-2 text-xl duration-300 ease-in-out hover:bg-transparent mt-20 xl:text-[18px] xl:px-4">
+            <Button className="relative text-white bg-transparent px-6 py-2 text-xl duration-300 ease-in-out hover:bg-transparent mt-20 xl:text-[18px] xl:px-4 max-xl:text-[18px] max-xl:px-4">
                 SEE FULL CASE STUDIES
 
 
             </Button>
             <div>
                 <GoArrowDownRight className="absolute bottom-0 right-20 transform -translate-y-1/2 text-5xl text-orange-600 transition-opacity duration-300 ease-in-out group-hover:opacity-0
-                xl:right-5 xl:text-4xl
+                xl:right-5 xl:text-4xl max-xl:right-5 max-xl:text-4xl
                 " />
                 <GoArrowUpRight className="absolute bottom-0 right-20 transform -translate-y-1/2 text-5xl text-white opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100
-                  xl:right-5 xl:text-4xl
+                  xl:right-5 xl:text-4xl max-xl:right-5 max-xl:text-4xl
                 " />
             </div>
         </section>
