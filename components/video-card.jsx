@@ -52,13 +52,14 @@ export default function VideoCard() {
 
     return (
         <>
-            <section className="bg-[#1c1e24] py-12 pl-8 pr-32 relative">
+            <section className="bg-[#1c1e24] py-12 pl-8 pr-32 relative sm:w-[98%] sm:pr-0 sm:pl-0 sm:mx-auto sm:pb-0">
                 <Swiper
                     modules={[Navigation]}
                     slidesPerView={3}
                     spaceBetween={30}
                     slidesPerGroup={3} // Di chuyển 3 slide mỗi lần
                     loop={true} // Bật tính năng lặp lại
+                    className="sm:w-full"
                     navigation={{
                         nextEl: '.swiper-button-next',
                         prevEl: '.swiper-button-prev',
@@ -78,6 +79,11 @@ export default function VideoCard() {
                             slidesPerView: 2,
                             spaceBetween: 40,
                             slidesPerGroup: 2, // Di chuyển 3 slide mỗi lần cho màn hình lớn
+                        },
+                        1535: {
+                            slidesPerView: 3,
+                            spaceBetween: 40,
+                            slidesPerGroup: 3, // Di chuyển 3 slide mỗi lần cho màn hình lớn
                         },
                     }}
                 >
@@ -103,19 +109,19 @@ export default function VideoCard() {
                                         </div>
                                         <div className="p-4 bg-transparent">
                                             <h3 className="text-xl font-bold text-white">{testimonial.name}</h3>
-                                            <p className="text-lg font-semibold text-gray-400 xl:text-[16px] max-xl:text-[16px]">{testimonial.title}</p>
+                                            <p className="2xl:text-lg font-semibold text-gray-400 xl:text-[16px] max-xl:text-[16px]">{testimonial.title}</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="p-6 leading-loose tracking-wide">
-                                    <p className="mt-4 text-gray-300 xl:text-base max-xl:text-base">{testimonial.feedback}</p>
+                                    <p className="mt-4 text-gray-300 2xl:test-base xl:text-base max-xl:text-base">{testimonial.feedback}</p>
                                 </div>
                             </div>
                         </SwiperSlide>
                     ))}
                 </Swiper>
 
-                <div className="absolute right-0 top-1/2 transform -translate-y-1/2 flex flex-col space-y-4">
+                <div className="absolute right-0 top-1/2 transform -translate-y-1/2 flex flex-col space-y-4 sm:hidden">
                     <div className="swiper-button-next text-8xl text-white">
                         <MdOutlineNavigateNext />
                     </div>

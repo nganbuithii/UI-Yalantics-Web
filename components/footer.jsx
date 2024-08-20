@@ -14,7 +14,10 @@ import Link from "next/link"
 export default function Footer({className}) {
     return (
         <>
-            <footer className={`main-bg flex flex-row pt-10  text-white pb-28 ${className}`}>
+        <div className={`${className}`}>
+
+     
+            <footer className={`main-bg flex flex-row pt-10  text-white pb-28 `}>
                 <section className="w-1/4 ml-14 ">
                     <div>
                         <p className="font-bold text-2xl">Services</p>
@@ -182,6 +185,8 @@ export default function Footer({className}) {
 
 
             </footer>
+            </div>
+
         </>
     )
 }

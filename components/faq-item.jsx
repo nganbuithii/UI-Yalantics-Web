@@ -8,10 +8,13 @@ export default function FAQ({ title, content }) {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className='w-[65%] mx-auto text-center mt-3 xl:w-[75%] lg:w-[90%]'>
+        <div className='2xl:w-[65%] mx-auto text-center mt-3 xl:w-[75%] lg:w-[90%] md:w-[90%] sm:w-[98%]
+        md:text-base'>
             <Accordion type="single" collapsible onValueChange={(value) => setIsOpen(value === 'item-1')}>
                 <AccordionItem value="item-1" className='w-full'>
-                    <AccordionTrigger className='bg-white px-8 py-6 text-xl flex items-center justify-between w-full xl:px-6 max-xl:px-6 xl:py-4 max-xl:py-4 tracking-wide' >
+                    <AccordionTrigger className='bg-white px-8 py-6 text-xl flex items-center 
+                    sm:text-lg justify-between w-full xl:px-6 max-xl:px-6 xl:py-4 max-xl:py-4 tracking-wide
+                    md:' >
                         <span>{title}</span>
                         <span>
                             {isOpen ? <FaMinus /> : <FaPlus />}
