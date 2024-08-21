@@ -52,14 +52,14 @@ export default function VideoCard() {
 
     return (
         <>
-            <section className="bg-[#1c1e24] py-12 pl-8 pr-32 relative sm:w-[98%] sm:pr-0 sm:pl-0 sm:mx-auto sm:pb-0">
+            <section className="bg-[#1c1e24] py-12 pl-8 pr-32 relative  sm:w-[98%] sm:pr-0 sm:pl-0 sm:mx-auto sm:pb-0 md:w">
                 <Swiper
                     modules={[Navigation]}
                     slidesPerView={3}
                     spaceBetween={30}
                     slidesPerGroup={3} // Di chuyển 3 slide mỗi lần
                     loop={true} // Bật tính năng lặp lại
-                    className="sm:w-full"
+                    className="sm:w-full md:w-[90%] md:justify-start md:items-start md:mr-10"
                     navigation={{
                         nextEl: '.swiper-button-next',
                         prevEl: '.swiper-button-prev',
@@ -121,7 +121,7 @@ export default function VideoCard() {
                     ))}
                 </Swiper>
 
-                <div className="absolute right-0 top-1/2 transform -translate-y-1/2 flex flex-col space-y-4 sm:hidden">
+                <div className="absolute right-0 top-1/2 transform -translate-y-1/2 flex flex-col space-y-4 sm:hidden md:block md:z-30 lg:-right-5">
                     <div className="swiper-button-next text-8xl text-white">
                         <MdOutlineNavigateNext />
                     </div>

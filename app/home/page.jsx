@@ -18,39 +18,41 @@ export default function HomePage() {
     return (
         <>
             <Header />
-        
+
             <section className="main-bg 2xl:flex 2xl:flex-row pt-14  lg:flex-none xl:px-8 ">
                 <div className="2xl:w-3/5 p-5 mt-32 lg:w-full  lg:flex-col lg:z-20 md:w-full
+                md:items-start md:justify-start
                 ">
-                    <div className="md:flex-row">
+                    <div className="md:flex-row md:pb-10">
                         <p className="text-orange-500 2xl:text-7xl xl:text-[40px] xl:text-start xl:pl  lg:text-[46px]  lg:text-center md:text-[46px] sm:text-2xl sm:text-center
-                    
+                    md:text-start
                     ">Software development</p>
-                        <p className="text-white 2xl:text-7xl xl:text-[40px] xl:text-start   lg:text-[46px]  lg:text-center  md:text-[46px]  sm:text-2xl sm:text-center">company that delivers for</p>
+                        <p className="text-white 2xl:text-7xl xl:text-[40px] xl:text-start   lg:text-[46px]  lg:text-center  md:text-[46px]  sm:text-2xl sm:text-center md:mt-3 md:text-start">company that delivers for</p>
                     </div>
 
                     {/* xl:justify-normal max-xl:justify-normal */}
                     <div className="flex justify-center space-x-4 mt-5 
                     xl:justify-start
                     lg:justify-center 
-                    sm:flex-wrap
+                    sm:flex-wrap sm:justify-around md:mt-3
                     ">
                         <Image src="/images/logo-3.svg" alt="logo1" width={250} height={250}
                             className="main-bg xl:w-[130px] 
                             2xl:w-[200px] 2xl:h-[150px]
                             xl:h-[70px] 
-                            lg:w-1/3  sm:w-1/3
+                            lg:w-1/3  sm:w-1/3 
+                            md:w-[160px]
                             "></Image>
                         <Image src="/images/logo-1.svg" alt="logo2" width={250} height={250} className="main-bg xl:w-[130px]  
                         lg:w-1/3  2xl:w-[250px] 2xl:h-[150px]
                         xl:h-[70px]  sm:w-1/3 "></Image>
                         <Image src="/images/logo-2.svg" alt="logo3" width={250} height={250} className="main-bg xl:w-[130px] 
                         lg:w-1/3 2xl:w-[300px] 2xl:mt-5
-                        xl:h-[70px]  sm:w-1/3"></Image>
+                        xl:h-[70px]  sm:w-1/3 sm:mt-4"></Image>
                     </div>
                     <div className=" lg:justify-center   xl:justify-start md:justify-center md:flex md:items-center sm:flex sm:justify-center sm:items-center
                     lg:flex ">
-                        <Button className="mt-10 border-2 border-orange-500 bg-orange-500 text-white hover:bg-orange-600 2xl:px-6  rounded-full text-lg font-semibold transition duration-300 ease-in-out 2xl:mx-10 2xl:py-8 2xl:px-5 md:text-center md:py-6 md:px-8
+                        <Button className="mt-10 border-2 border-orange-500 bg-orange-500 text-white hover:bg-orange-600 2xl:px-6  rounded-full text-lg font-semibold transition duration-300 ease-in-out 2xl:mx-10 2xl:py-8  md:text-center md:py-6 md:px-8
                     xl:text-[14px] 
                     xl:py-4  2xl:text-xl 
                     lg:py-6 
@@ -64,16 +66,14 @@ export default function HomePage() {
                 </div>
                 <div className="2xl:w-2/5 lg:hidden
                 2xl:inline-block md:hidden sm:hidden
-                "> 
+                ">
                     <Image src="/images/y.png" className=" 2xl:w-[620px] 2xl:h-[760px] xl:w-[600px]  xl:h-[640px]  xl:absolute xl:right-[100px] xl:top-0
                                 " alt="y" width={620} height={620}></Image>
                 </div>
             </section>
 
-            <section className="flex flex-row 2xl:flex-nowrap main-bg xl:justify-center  xl:pt-44 2xl:justify-center
-            lg:flex-wrap md:flex-wrap sm:flex-wrap
-            ">
-                <div className=" 2xl:py-10 xl:py-5   xl:w-[24%]  lg:w-[50%] md:w-1/2 sm:w-full sm:mx-3 sm:pb-0">
+            <section className="flex flex-row flex-wrap 2xl:flex-nowrap main-bg xl:justify-center xl:pt-44 2xl:justify-center lg:flex-wrap md:flex-wrap sm:flex-wrap">
+                <div className="p-5 md:p-0 xl:p-3 xl:w-[49%] lg:w-[49%] md:w-[48%] sm:w-full md:mx-auto md:pb-2">
                     <CardReadMore
                         title={"Developteam augement tation"}
                         items={[
@@ -86,7 +86,7 @@ export default function HomePage() {
                         ]}
                     />
                 </div>
-                <div className="py-10 xl:py-5   xl:w-[24%]   lg:w-[50%] md:w-1/2 sm:w-full sm:mx-3">
+                 <div className="p-5 md:p-0 xl:p-3 xl:w-[49%] lg:w-[49%] md:w-[48%] sm:w-full md:mx-auto ">
                     <CardReadMore
                         title={"Developteam augement tation"}
                         items={[
@@ -99,7 +99,7 @@ export default function HomePage() {
                         ]}
                     />
                 </div>
-                <div className="py-10  xl:py-5  xl:w-[24%]  lg:w-[50%] md:w-1/2 sm:w-full sm:mx-3">
+                 <div className="p-5 md:p-0 xl:p-3 xl:w-[49%] lg:w-[49%] md:w-[48%] sm:w-full md:mx-auto ">
                     <CardReadMore
                         title={"Developteam augement tation"}
                         items={[
@@ -112,7 +112,7 @@ export default function HomePage() {
                         ]}
                     />
                 </div>
-                <div className=" py-10 xl:py-5  2xl:pr-7 xl:pr-0 m xl:w-[24%]  lg:w-[50%] md:w-1/2 sm:w-full sm:mx-3">
+                 <div className="p-5 md:p-0 xl:p-3 xl:w-[49%] lg:w-[49%] md:w-[48%] sm:w-full md:mx-auto ">
                     <CardReadMore
                         title={"Developteam augement tation"}
                         items={[
@@ -125,10 +125,8 @@ export default function HomePage() {
                         ]}
                     />
                 </div>
-
-
-
             </section>
+
 
             <section className="main-bg py-12 pt-40 sm:py-8">
                 <h1 className="text-6xl text-white pb-11 px-7 xl:text-[56px]  md:text-[56px] sm:text-2xl sm:pb-1">Video testimonials

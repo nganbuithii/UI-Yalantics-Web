@@ -68,14 +68,14 @@ export default function FooterRes({ className }) {
                             </Accordion>
                         </div>
                         <div className="flex md:flex-row mt-16 sm:flex-col sm:justify-center">
-                            <div className="md:w-1/2 sm:w-full ">
+                            <div className="md:w-1/2 sm:w-[90%] ">
                                 <div>
-                                    <Button className="border-2 main-bg border-orange-500 text-white hover:bg-orange-600 md:px-12 md:py-7 rounded-full text-lg font-semibold transition duration-300 ease-in-out sm:w-full">
+                                    <Button className="border-2 main-bg border-orange-500 text-white hover:bg-orange-600 md:px-12 md:py-7 rounded-full text-lg font-semibold transition duration-300 ease-in-out sm:w-full sm:py-7">
                                         CONTACT US
                                     </Button>
 
                                 </div>
-                                <div className="flex flex-row mt-10 ">
+                                <div className="flex flex-row mt-10 sm:justify-center sm:items-center">
                                     <div>
                                         <FaLinkedin className="text-4xl text-gray-400 mr-8" />
                                     </div>
@@ -92,9 +92,16 @@ export default function FooterRes({ className }) {
                                         <FaYoutube className="text-4xl text-gray-400 mr-8" />
                                     </div>
                                 </div>
-                                <div>
-                                    <Image src="/images/footer.png" className="my-16" alt="logo" width={280} height={200}></Image>
+                                <div className="flex sm:justify-center sm:items-center">
+                                    <Image
+                                        src="/images/footer.png"
+                                        className="my-16"
+                                        alt="logo"
+                                        width={280}
+                                        height={200}
+                                    />
                                 </div>
+
                             </div>
 
                             <div className="md:w-1/2 flex flex-col md:items-end sm:w-full sm:items-center">

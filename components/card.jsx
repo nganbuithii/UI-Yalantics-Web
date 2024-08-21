@@ -7,7 +7,7 @@ export default function CardReadMore({ title, items = [] }) {
     return (
         <section className="relative border border-orange-100 2xl:px-10 2xl:mx-2  2xl:py-6 transition-transform transform hover:-translate-y-6 duration-300 ease-in-out group hover:bg-black
         xl:px-[32px]  max-xl:px-[32px] lg:px-5
-        md:mx-3 sm:pb-0
+        md:mx-0 sm:pb-0
        
         ">
             <h4 className="font-bold 2xl:text-xl text-white pt-8 pb-8 xl:text-[18px] max-xl:text-[18px] sm:text-lg ">{title}</h4>

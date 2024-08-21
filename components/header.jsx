@@ -48,7 +48,7 @@ export default function Header() {
                 <header
                     className={`transition-colors duration-300 ease-in-out fixed top-0 left-0 
                         md:bg-transparent w-full z-50 ${isScrolled ? 'main-bg' : 'main-bg'} text-white shadow-lg pt-5 pb-4`}
-                    
+
                 >
                     <div className="flex flex-row justify-around items-center h-16">
                         <div className="2xl:w-[15%] xl:w-[10%] flex-shrink-0 flex items-center justify-center">
@@ -63,7 +63,7 @@ export default function Header() {
                             </Link>
                         </div>
 
-                        <div className="flex items-center justify-between h-16">
+                        <div className="flex items-center justify-between  h-16">
                             <nav className="flex flex-row items-center space-x-6 xl:space-x-2  mx-auto  
                             2xl:block lg:hidden md:hidden sm:hidden
                             ">
@@ -102,16 +102,15 @@ export default function Header() {
                                 <Button
                                     onClick={handleClick}
                                     className="border-2 border-orange-500 main-bg text-white hover:bg-orange-600 2xl:px-6 2xl:py-7 rounded-full 2xl:text-lg font-semibold transition duration-300 ease-in-out
-                                    xl:text-base 
-                                    xl:px-3 xl:py-5  xl:mr-16
-
-                                    lg:bg-orange-500 lg:text-white
-                                    md:text-orange-500
-                                    md:py-5 sm:hidden
-                                    ">
+        xl:text-base xl:px-3 xl:py-5 xl:mr-16
+        lg:bg-orange-500 lg:text-white
+        md:bg-transparent md:text-orange-500 md:pb-5 md:text-center md:block md:hover:bg-transparent md:px-8 
+        sm:flex sm:items-center sm:justify-center sm:text-center sm:w-full sm:py-5">
                                     CONTACT US
                                 </Button>
+
                             </div>
+
                             <div className='2xl:hidden lg:inline-block md:inline-block'>
                                 <TiThMenu onClick={toggleMenu} className="text-5xl ml-10 text-white 2xl:hidden lg:inline-block md:inline-block" />
                             </div>

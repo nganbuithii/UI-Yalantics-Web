@@ -140,3 +140,7 @@ header hover */
   color: orange;
 }
 /* end header hover */
+
+* {
+  box-sizing: border-box;
+}
