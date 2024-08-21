@@ -25,9 +25,11 @@ export default function CaseStudies({ title, items = [], className, image }) {
                 <GoArrowDownRight className="absolute bottom-0 right-20 transform -translate-y-1/2 text-5xl text-orange-600 transition-opacity duration-300 ease-in-out group-hover:opacity-0
                 xl:right-5 xl:text-4xl 
                 sm:left-2/3
+                md:text-base md:-right-11
                 " />
                 <GoArrowUpRight className="absolute bottom-0 right-20 transform -translate-y-1/2 text-5xl text-white opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100
                   xl:right-5 xl:text-4xl  sm:left-2/3
+                md:text-base md:-right-11
                 " />
             </div>
         </section>
