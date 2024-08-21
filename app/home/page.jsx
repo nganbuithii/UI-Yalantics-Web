@@ -24,11 +24,14 @@ export default function HomePage() {
                 md:items-start md:justify-start
                 ">
                     <div className="md:flex-row md:pb-10">
+                        <p className="sm:block md:hidden sm:text-white sm:text-2xl">
+                            <span className="text-orange-500">Software development</span> company that delivers for
+                        </p>
                         <p className="text-orange-500 2xl:text-7xl xl:text-[56px] xl:text-start xl:pl  lg:text-[46px]  lg:text-start md:text-[46px] sm:text-2xl sm:text-center
-                    md:text-start
+                    md:text-start sm:hidden md:inline-block
                     
                     ">Software development</p>
-                        <p className="text-white 2xl:text-7xl xl:text-[56px] xl:text-start xl:mt-3  lg:text-[46px]  lg:text-start  md:text-[46px]  sm:text-2xl sm:text-center md:mt-3 md:text-start">company that delivers for</p>
+                        <p className="text-white 2xl:text-7xl xl:text-[56px] xl:text-start xl:mt-3  lg:text-[46px]  lg:text-start  md:text-[46px]  sm:text-2xl sm:text-center md:mt-3 md:text-start sm:hidden md:inline-block">company that delivers for</p>
                     </div>
 
                     {/* xl:justify-normal max-xl:justify-normal */}
@@ -36,14 +39,15 @@ export default function HomePage() {
                     xl:justify-start
                     lg:justify-around lg:flex-nowrap xl:flex-wrap
                     md:flex-nowrap
-                    sm:flex-wrap sm:justify-around md:mt-3
+                    sm:flex-wrap sm:justify-around md:mt-3 sm:mt-16
                     ">
                         <Image src="/images/logo-3.svg" alt="logo1" width={250} height={250}
                             className="main-bg 
                             xl:w-[200px] xl:h-[150px]
                             
-                            lg:w-[200px]  sm:w-1/3  
+                            lg:w-[200px]   
                             md:w-[160px]
+                            sm:w-[70px] 
                             "></Image>
                         <Image src="/images/logo-1.svg" alt="logo2" width={250} height={250} className="main-bg 
                         lg:w-[200px]  2xl:w-[250px] 2xl:h-[150px]
@@ -58,13 +62,14 @@ export default function HomePage() {
                         xl:text-base xl:px-8 xl:py-6
                         lg:text-base lg:px-10 lg:py-6 lg:mt-16
                         md:text-base md:px-10 md:py-6 md:mt-16
+                        sm:text-base sm:px-10 sm:py-6 sm:mt-16
                     ">
                             CONTACT US
                         </Button>
                     </div>
 
                 </div>
-                <div className="2xl:w-2/5 xl:block lg:hidden  md:hidden
+                <div className="2xl:w-2/5 xl:block lg:hidden  md:hidden sm:hidden
                 ">
                     <Image src="/images/y.png" className=" 2xl:w-[620px] 2xl:h-[760px] xl:w-[600px]  xl:h-[640px]  xl:absolute xl:right-[100px] xl:top-0 
                                 " alt="y" width={620} height={620}></Image>
@@ -74,7 +79,7 @@ export default function HomePage() {
             <section className="xl:flex xl:flex-row flex-wrap xl:flex-nowrap main-bg xl:pt-24 xl:pb-[80px] lg:grid lg:grid-cols-2 lg:gap-4 lg:px-5 lg:pb-[60px] md:pb-[60px]
             md:grid md:grid-cols-2 md:gap-3 md:px-5 
             ">
-                <div className="xl:w-1/4 xl:mx-2 lg:w-full lg:mx-0">
+                <div className="xl:w-1/4 xl:mx-2 lg:w-full lg:mx-0 sm:px-4 sm:pb-4">
                     <CardReadMore
                         title={"Developteam augement tation"}
                         items={[
@@ -87,7 +92,7 @@ export default function HomePage() {
                         ]}
                     />
                 </div>
-                <div className="xl:w-1/4 xl:mx-2 lg:w-full lg:mx-0">
+                <div className="xl:w-1/4 xl:mx-2 lg:w-full lg:mx-0 sm:px-4 sm:pb-4">
                     <CardReadMore
                         title={"Developteam augement tation"}
                         items={[
@@ -100,7 +105,7 @@ export default function HomePage() {
                         ]}
                     />
                 </div>
-                <div className="xl:w-1/4 xl:mx-2 lg:w-full lg:mx-0">
+                <div className="xl:w-1/4 xl:mx-2 lg:w-full lg:mx-0 sm:px-4 sm:pb-4">
                     <CardReadMore
                         title={"Developteam augement tation"}
                         items={[
@@ -113,7 +118,7 @@ export default function HomePage() {
                         ]}
                     />
                 </div>
-                <div className="xl:w-1/4 xl:mx-2 lg:w-full lg:mx-0">
+                <div className="xl:w-1/4 xl:mx-2 lg:w-full lg:mx-0 sm:px-4 sm:pb-4">
                     <CardReadMore
                         title={"Developteam augement tation"}
                         items={[
@@ -229,7 +234,7 @@ export default function HomePage() {
                     <ContactForm />
                 </div>
 
-                <div className="xl:w-1/2 text-white lg:w-full md:w-full lg:pt-10 sm:px-5 lg:main-bg ">
+                <div className="xl:w-1/2 text-white lg:w-full md:w-full lg:pt-10 sm:px-5 lg:main-bg " >
                     <p className="font-bold text-gray-600 text-xl md:pt-8 sm:pl-5 sm:pb-5 sm:pt-5">Yalantis in brief</p>
                     <div className="flex lg:flex-row justify-around sm:flex-col md:flex-row">
                         <div>

@@ -16,7 +16,7 @@ export default function CaseStudies({ title, items = [], className, image }) {
                 </div>
             ))}
             <Button className="relative text-white bg-transparent px-6 py-2 text-xl duration-300 ease-in-out hover:bg-transparent mt-20 xl:text-[18px] xl:px-4  max-xl:px-4
-            md:text-[16px] md:mr-16">
+            md:text-[16px] md:mr-16 sm:text-base">
                 SEE FULL CASE STUDIES
 
 
@@ -24,9 +24,10 @@ export default function CaseStudies({ title, items = [], className, image }) {
             <div>
                 <GoArrowDownRight className="absolute bottom-0 right-20 transform -translate-y-1/2 text-5xl text-orange-600 transition-opacity duration-300 ease-in-out group-hover:opacity-0
                 xl:right-5 xl:text-4xl 
+                sm:left-2/3
                 " />
                 <GoArrowUpRight className="absolute bottom-0 right-20 transform -translate-y-1/2 text-5xl text-white opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100
-                  xl:right-5 xl:text-4xl 
+                  xl:right-5 xl:text-4xl  sm:left-2/3
                 " />
             </div>
         </section>

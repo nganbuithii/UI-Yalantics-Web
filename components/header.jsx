@@ -50,15 +50,17 @@ export default function Header() {
                         w-full z-50 ${isScrolled ? 'main-bg' : 'bg-transparent'} text-white shadow-lg pt-5 pb-4`}
 
                 >
-                    <div className="flex flex-row justify-around items-center h-16">
-                        <div className="2xl:w-[15%] xl:w-[10%] flex-shrink-0 flex items-center justify-center">
+                    <div className="flex flex-row md:justify-around items-center h-16 sm:justify-around">
+                        <div className="2xl:w-[15%] xl:w-[10%] flex-shrink-0 flex items-center justify-center
+                        sm:w-[10%]
+                        ">
                             <Link href="/home">
                                 <Image
                                     src="/images/logo_white.svg"
                                     alt="Logo"
                                     width={130}
                                     height={130}
-                                    className="object-contain 2xl:w-[130px] xl:w-[90px]"
+                                    className="object-contain 2xl:w-[130px] xl:w-[90px] sm:w-[80px]"
                                 />
                             </Link>
                         </div>
@@ -66,7 +68,7 @@ export default function Header() {
                         <div className="flex items-center justify-between  h-16">
                             <nav className="flex flex-row items-center space-x-6  mx-auto
                             xl:space-x-0  xl:w-full  xl:block
-                            lg:hidden md:hidden
+                            lg:hidden md:hidden sm:hidden
                             ">
                                 <Link
                                     onMouseEnter={() => setIsServicesHover(true)}
@@ -99,23 +101,24 @@ export default function Header() {
                             </nav>
                         </div>
                         <div className="ml-15 lg:flex flex-row md:flex md:flex-row
-                        xl:w-[15%] lg:w-[15%]
+                        xl:w-[15%] lg:w-[15%] 
+                        
                         ">
-                            <div>
+                            <div className='sm:hidden md:block'>
                                 <Button
                                     onClick={handleClick}
                                     className="border-2 border-orange-500 main-bg text-white hover:bg-orange-600 px-6 py-7 rounded-full text-lg font-semibold transition duration-300 ease-in-out
                                     xl:bg-transparent xl:text-orange-500 
                                     lg:text-orange-500
                                     md:text-orange-500
+                                    
                                     ">
                                     CONTACT US
                                 </Button>
 
                             </div>
 
-                           
-                            <div className=' xl:hidden'>
+                            <div className=' xl:hidden sm:block'>
                                 <TiThMenu onClick={toggleMenu} className="text-5xl ml-10 text-white  lg:inline-block md:inline-block" />
                             </div>
                         </div>
