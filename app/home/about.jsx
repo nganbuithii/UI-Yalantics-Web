@@ -5,11 +5,11 @@ export default function AboutUs() {
         <>
             <section className=" py-12 pt-40 xl:pt-[85px] max-xl:pt-[85px] ">
                 <div className="flex flex-row">
-                    <h1 className="2xl:text-6xl text-orange-600 pb-11 pl-8 xl:text-[56px] max-xl:text-[56px]
+                    <h1 className=" text-orange-600 pb-11 pl-8 xl:text-[56px] max-xl:text-[56px]
                     md:text-[46px] sm:text-[18px] sm:pb-1">About
                     </h1>
 
-                    <h1 className="2xl:text-6xl text-black pb-11 pl-4 xl:text-[56px] max-xl:text-[56px]  md:text-[46px]  sm:text-[18px] sm:pb-1">Us
+                    <h1 className=" text-black pb-11 pl-4 xl:text-[56px] max-xl:text-[56px]  md:text-[46px]  sm:text-[18px] sm:pb-1">Us
                     </h1>
                 </div>
 
@@ -18,7 +18,7 @@ export default function AboutUs() {
                         <p className="2xl:text-xl sm:w-full ">
                             Since 2008, Yalantis has been helping companies in the FinTech, healthcare, real estate, supply chain management, and other industries succeed with custom software solutions. Driven by our clients’ business-specific needs and time and budget constraints, our software development company builds and augments secure, stable, scalable, and highly functional digital products to deliver maximum value and ensure business sustainability.
                         </p>
-                        <div className="flex flex-row  sm:flex-col sm:justify-start xl:flex-row lg:flex-row lg:pb-[30px]">
+                        <div className="flex flex-row  sm:flex-col sm:justify-start xl:flex-row lg:flex-row lg:pb-[30px] md:flex-row md:pb-8">
                             <div className="pt-14 ml-12 sm:pt-3">
                                 <p className="text-orange-400 font-normal 2xl:text-6xl md:text-[42px] sm:text-[32px] sm:font-semibold ">15+</p>
                                 <p className="text-xl leading-7 pt-10 text-gray-500 md:text-[20px] sm:pt-3">

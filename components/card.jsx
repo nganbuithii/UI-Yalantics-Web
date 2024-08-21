@@ -26,7 +26,7 @@ export default function CardReadMore({ title, items = [] }) {
             <Button className="text-white bg-transparent px-6 py-2 text-xl duration-300 ease-in-out group-hover:text-orange-600 group-hover:bg-transparent
             xl:tracking-wider
             xl:text-white
-            xl:pb-10 xl:pt-14
+            xl:pb-10 xl:pt-14 md:text-orange-500
             ">
                 READ MORE <FaArrowRight className="ml-5 group-hover:ml-10 md:text-orange-500 sm:text-orange-500 xl:text-white xl:group-hover:text-orange-500" />
             </Button>

@@ -17,7 +17,7 @@ export default function FooterRes({ className }) {
             <div className={`${className}`}>
                 <footer className="main-bg flex flex-row pt-10  text-white pb-28">
                     <section className="w-full ml-14 ">
-                        <div class="w-2/3 mx-auto sm:hidden lg:block">
+                        <div class="w-2/3 mx-auto sm:hidden lg:block md:block md:pb-4">
                             <Accordion type="single" collapsible>
                                 <AccordionItem value="item-1">
                                     <AccordionTrigger className=" lg:text-[24px] md:text-[24px] md:pb-[25px] lg:pb-[25px]">Is it accessible?</AccordionTrigger>
@@ -27,7 +27,7 @@ export default function FooterRes({ className }) {
                                 </AccordionItem>
                             </Accordion>
                         </div>
-                        <div class="w-2/3 mx-auto sm:hidden lg:block">
+                        <div class="w-2/3 mx-auto sm:hidden lg:block md:block md:pb-4">
                             <Accordion type="single" collapsible>
                                 <AccordionItem value="item-1">
                                     <AccordionTrigger className=" lg:text-[24px] md:text-[24px] md:pb-[25px] lg:pb-[25px]">Is it accessible?</AccordionTrigger>
@@ -37,7 +37,7 @@ export default function FooterRes({ className }) {
                                 </AccordionItem>
                             </Accordion>
                         </div>
-                        <div class="w-2/3 mx-auto sm:hidden lg:block">
+                        <div class="w-2/3 mx-auto sm:hidden lg:block md:block md:pb-4">
                             <Accordion type="single" collapsible>
                                 <AccordionItem value="item-1">
                                     <AccordionTrigger className=" lg:text-[24px] md:text-[24px] md:pb-[25px] lg:pb-[25px]">Is it accessible?</AccordionTrigger>
@@ -47,7 +47,7 @@ export default function FooterRes({ className }) {
                                 </AccordionItem>
                             </Accordion>
                         </div>
-                        <div class="w-2/3 mx-auto sm:hidden lg:block">
+                        <div class="w-2/3 mx-auto sm:hidden lg:block md:block md:pb-4">
                             <Accordion type="single" collapsible>
                                 <AccordionItem value="item-1">
                                     <AccordionTrigger className=" lg:text-[24px] md:text-[24px] md:pb-[25px] lg:pb-[25px]">Is it accessible?</AccordionTrigger>
@@ -57,7 +57,7 @@ export default function FooterRes({ className }) {
                                 </AccordionItem>
                             </Accordion>
                         </div>
-                        <div class="w-2/3 mx-auto sm:hidden lg:block">
+                        <div class="w-2/3 mx-auto sm:hidden lg:block md:block md:pb-4">
                             <Accordion type="single" collapsible>
                                 <AccordionItem value="item-1">
                                     <AccordionTrigger className=" lg:text-[24px] md:text-[24px] md:pb-[25px] lg:pb-[25px]">Is it accessible?</AccordionTrigger>
@@ -67,43 +67,42 @@ export default function FooterRes({ className }) {
                                 </AccordionItem>
                             </Accordion>
                         </div>
-                        <div className="flex md:flex-row mt-16 sm:flex-col sm:justify-center">
-                            <div className="md:w-1/2 sm:w-[90%] ">
+                        <div className="flex md:flex-row mt-16 sm:flex-col sm:justify-center ">
+                            <div className="md:w-1/2 sm:w-[90%] mx-auto">
                                 <div className="lg:text-center">
                                     <Button className="border-2 main-bg border-orange-500 text-white hover:bg-orange-600 md:px-12 md:py-7 rounded-full text-lg font-semibold transition duration-300 ease-in-out sm:w-full sm:py-7
-                                    lg:w-1/2 lg:text-center
-                                    ">
+            lg:w-1/2 lg:text-center lg:text-lg
+            md:w-1/2 md:text-orange-500 md:text-base
+        ">
                                         CONTACT US
                                     </Button>
-
                                 </div>
-                                <div className="flex flex-row mt-10 sm:justify-center sm:items-center">
-                                    <div>
-                                        <FaLinkedin className="text-4xl text-gray-400 mr-8" />
+                                <div className="flex flex-col md:flex-row mt-10 md:justify-center md:items-center">
+                                    <div className="md:mx-4">
+                                        <FaLinkedin className="lg:text-4xl md:text-2xl text-gray-400" />
                                     </div>
-                                    <div>
-                                        <FaFacebookSquare className="text-4xl text-gray-400 mr-8" />
+                                    <div className="md:mx-4">
+                                        <FaFacebookSquare className="lg:text-4xl md:text-2xl text-gray-400" />
                                     </div>
-                                    <div>
-                                        <FaGithub className="text-4xl text-gray-400 mr-8" />
+                                    <div className="md:mx-4">
+                                        <FaGithub className="lg:text-4xl md:text-2xl text-gray-400" />
                                     </div>
-                                    <div>
-                                        <FaInstagram className="text-4xl text-gray-400 mr-8" />
+                                    <div className="md:mx-4">
+                                        <FaInstagram className="lg:text-4xl md:text-2xl text-gray-400" />
                                     </div>
-                                    <div>
-                                        <FaYoutube className="text-4xl text-gray-400 mr-8" />
+                                    <div className="md:mx-4">
+                                        <FaYoutube className="lg:text-4xl md:text-2xl text-gray-400" />
                                     </div>
                                 </div>
-                                <div className="flex sm:justify-center sm:items-center">
+                                <div className="flex justify-center mt-10 md:mt-7">
                                     <Image
                                         src="/images/footer.png"
-                                        className="my-16"
+                                        // className="my-16"
                                         alt="logo"
                                         width={280}
                                         height={200}
                                     />
                                 </div>
-
                             </div>
 
                             <div className="md:w-1/2 flex flex-col md:items-end sm:w-full sm:items-center">

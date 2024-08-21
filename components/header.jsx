@@ -66,7 +66,7 @@ export default function Header() {
                         <div className="flex items-center justify-between  h-16">
                             <nav className="flex flex-row items-center space-x-6  mx-auto
                             xl:space-x-0  xl:w-full  xl:block
-                            lg:hidden
+                            lg:hidden md:hidden
                             ">
                                 <Link
                                     onMouseEnter={() => setIsServicesHover(true)}
@@ -107,6 +107,7 @@ export default function Header() {
                                     className="border-2 border-orange-500 main-bg text-white hover:bg-orange-600 px-6 py-7 rounded-full text-lg font-semibold transition duration-300 ease-in-out
                                     xl:bg-transparent xl:text-orange-500 
                                     lg:text-orange-500
+                                    md:text-orange-500
                                     ">
                                     CONTACT US
                                 </Button>

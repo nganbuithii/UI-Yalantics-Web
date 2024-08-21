@@ -41,7 +41,7 @@ export default function MenuRes({ onClose }) {
                             />
                         </Link>
                     </div>
-                    <div className="lg:pr-0 md:pr-20 sm:pr-20">
+                    <div className="lg:pr-0 md:pr-10 sm:pr-20">
                         <FaXmark onClick={onClose} className="text-5xl cursor-pointer lg:inline-block md:inline-block" />
                     </div>
                 </div>
@@ -132,6 +132,7 @@ export default function MenuRes({ onClose }) {
                 <div className="sm:flex sm:justify-center sm:w-full md:hidden">
                     <Button
                         className="border-2 border-orange-500 main-bg text-white hover:bg-orange-600 px-6 py-7 rounded-full text-lg font-semibold transition duration-300 ease-in-out
+                        md:bg-orange-500
             "
                     >
                         CONTACT US
