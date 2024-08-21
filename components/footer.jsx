@@ -17,7 +17,7 @@ export default function Footer({className}) {
         <div className={`${className}`}>
 
      
-            <footer className={`main-bg flex flex-row pt-10  text-white pb-28 `}>
+            <footer className={`main-bg flex flex-row pt-10  text-white pb-28 xl:pt-[104px]`}>
                 <section className="w-1/4 ml-14 ">
                     <div>
                         <p className="font-bold text-2xl">Services</p>

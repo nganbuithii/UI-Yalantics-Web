@@ -65,8 +65,8 @@ export default function Header() {
 
                         <div className="flex items-center justify-between  h-16">
                             <nav className="flex flex-row items-center space-x-6  mx-auto
-                            xl:space-x-0  xl:w-full
-                        
+                            xl:space-x-0  xl:w-full  xl:block
+                            lg:hidden
                             ">
                                 <Link
                                     onMouseEnter={() => setIsServicesHover(true)}
@@ -99,13 +99,15 @@ export default function Header() {
                             </nav>
                         </div>
                         <div className="ml-15 lg:flex flex-row md:flex md:flex-row
-                        xl:w-[15%]
+                        xl:w-[15%] lg:w-[15%]
                         ">
                             <div>
                                 <Button
                                     onClick={handleClick}
                                     className="border-2 border-orange-500 main-bg text-white hover:bg-orange-600 px-6 py-7 rounded-full text-lg font-semibold transition duration-300 ease-in-out
-                                    xl:bg-transparent xl:text-orange-500       ">
+                                    xl:bg-transparent xl:text-orange-500 
+                                    lg:text-orange-500
+                                    ">
                                     CONTACT US
                                 </Button>
 
@@ -113,7 +115,7 @@ export default function Header() {
 
                            
                             <div className=' xl:hidden'>
-                                <TiThMenu onClick={toggleMenu} className="text-5xl ml-10 text-white 2xl:hidden lg:inline-block md:inline-block" />
+                                <TiThMenu onClick={toggleMenu} className="text-5xl ml-10 text-white  lg:inline-block md:inline-block" />
                             </div>
                         </div>
                     </div>

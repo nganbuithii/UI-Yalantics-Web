@@ -17,7 +17,7 @@ export default function FooterRes({ className }) {
             <div className={`${className}`}>
                 <footer className="main-bg flex flex-row pt-10  text-white pb-28">
                     <section className="w-full ml-14 ">
-                        <div class="w-2/3 mx-auto sm:hidden">
+                        <div class="w-2/3 mx-auto sm:hidden lg:block">
                             <Accordion type="single" collapsible>
                                 <AccordionItem value="item-1">
                                     <AccordionTrigger className=" lg:text-[24px] md:text-[24px] md:pb-[25px] lg:pb-[25px]">Is it accessible?</AccordionTrigger>
@@ -27,7 +27,7 @@ export default function FooterRes({ className }) {
                                 </AccordionItem>
                             </Accordion>
                         </div>
-                        <div class="w-2/3 mx-auto sm:hidden">
+                        <div class="w-2/3 mx-auto sm:hidden lg:block">
                             <Accordion type="single" collapsible>
                                 <AccordionItem value="item-1">
                                     <AccordionTrigger className=" lg:text-[24px] md:text-[24px] md:pb-[25px] lg:pb-[25px]">Is it accessible?</AccordionTrigger>
@@ -37,7 +37,7 @@ export default function FooterRes({ className }) {
                                 </AccordionItem>
                             </Accordion>
                         </div>
-                        <div class="w-2/3 mx-auto sm:hidden">
+                        <div class="w-2/3 mx-auto sm:hidden lg:block">
                             <Accordion type="single" collapsible>
                                 <AccordionItem value="item-1">
                                     <AccordionTrigger className=" lg:text-[24px] md:text-[24px] md:pb-[25px] lg:pb-[25px]">Is it accessible?</AccordionTrigger>
@@ -47,7 +47,7 @@ export default function FooterRes({ className }) {
                                 </AccordionItem>
                             </Accordion>
                         </div>
-                        <div class="w-2/3 mx-auto sm:hidden">
+                        <div class="w-2/3 mx-auto sm:hidden lg:block">
                             <Accordion type="single" collapsible>
                                 <AccordionItem value="item-1">
                                     <AccordionTrigger className=" lg:text-[24px] md:text-[24px] md:pb-[25px] lg:pb-[25px]">Is it accessible?</AccordionTrigger>
@@ -57,7 +57,7 @@ export default function FooterRes({ className }) {
                                 </AccordionItem>
                             </Accordion>
                         </div>
-                        <div class="w-2/3 mx-auto sm:hidden">
+                        <div class="w-2/3 mx-auto sm:hidden lg:block">
                             <Accordion type="single" collapsible>
                                 <AccordionItem value="item-1">
                                     <AccordionTrigger className=" lg:text-[24px] md:text-[24px] md:pb-[25px] lg:pb-[25px]">Is it accessible?</AccordionTrigger>
@@ -69,8 +69,10 @@ export default function FooterRes({ className }) {
                         </div>
                         <div className="flex md:flex-row mt-16 sm:flex-col sm:justify-center">
                             <div className="md:w-1/2 sm:w-[90%] ">
-                                <div>
-                                    <Button className="border-2 main-bg border-orange-500 text-white hover:bg-orange-600 md:px-12 md:py-7 rounded-full text-lg font-semibold transition duration-300 ease-in-out sm:w-full sm:py-7">
+                                <div className="lg:text-center">
+                                    <Button className="border-2 main-bg border-orange-500 text-white hover:bg-orange-600 md:px-12 md:py-7 rounded-full text-lg font-semibold transition duration-300 ease-in-out sm:w-full sm:py-7
+                                    lg:w-1/2 lg:text-center
+                                    ">
                                         CONTACT US
                                     </Button>
 

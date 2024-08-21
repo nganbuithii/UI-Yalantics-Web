@@ -41,17 +41,17 @@ export default function MenuRes({ onClose }) {
                             />
                         </Link>
                     </div>
-                    <div className="lg:pr-28 md:pr-20 sm:pr-20">
+                    <div className="lg:pr-0 md:pr-20 sm:pr-20">
                         <FaXmark onClick={onClose} className="text-5xl cursor-pointer lg:inline-block md:inline-block" />
                     </div>
                 </div>
 
 
                 <div className="sm:hidden md:block">
-                    <div className="lg:w-[90%]  lg:mx-auto md:w-[90%]  md:mx-auto sm:w-[90%]  sm:mx-auto md:block lg:block xl:block">
+                    <div className="lg:w-[80%]  lg:mx-auto md:w-[90%]  md:mx-auto sm:w-[90%]  sm:mx-auto md:block lg:block xl:block">
                         <Accordion type="single" collapsible>
                             <AccordionItem value="item-1">
-                                <AccordionTrigger className="lg:text-[24px] lg:py-5 text-black  ">SERVICES</AccordionTrigger>
+                                <AccordionTrigger className="lg:text-[24px] lg:py-8 text-black  ">SERVICES</AccordionTrigger>
                                 <AccordionContent>
                                     Yes. It adheres to the WAI-ARIA design pattern.
                                 </AccordionContent>
@@ -59,10 +59,10 @@ export default function MenuRes({ onClose }) {
                         </Accordion>
 
                     </div>
-                    <div className="lg:w-[90%]  lg:mx-auto md:w-[90%]  md:mx-auto sm:w-[90%]  sm:mx-auto">
+                    <div className="lg:w-[80%]  lg:mx-auto md:w-[90%]  md:mx-auto sm:w-[90%]  sm:mx-auto">
                         <Accordion type="single" collapsible>
                             <AccordionItem value="item-1">
-                                <AccordionTrigger className="lg:text-[24px] lg:py-5 ">EXPERTISE</AccordionTrigger>
+                                <AccordionTrigger className="lg:text-[24px] lg:py-8 ">EXPERTISE</AccordionTrigger>
                                 <AccordionContent>
                                     Yes. It adheres to the WAI-ARIA design pattern.
                                 </AccordionContent>
@@ -70,10 +70,10 @@ export default function MenuRes({ onClose }) {
                         </Accordion>
 
                     </div>
-                    <div className="lg:w-[90%]  lg:mx-auto md:w-[90%]  md:mx-auto sm:w-[90%]  sm:mx-auto">
+                    <div className="lg:w-[80%]  lg:mx-auto md:w-[90%]  md:mx-auto sm:w-[90%]  sm:mx-auto">
                         <Accordion type="single" collapsible>
                             <AccordionItem value="item-1">
-                                <AccordionTrigger className="lg:text-[24px] lg:py-5 ">TECHNOLOGY</AccordionTrigger>
+                                <AccordionTrigger className="lg:text-[24px] lg:py-8 ">TECHNOLOGY</AccordionTrigger>
                                 <AccordionContent>
                                     Yes. It adheres to the WAI-ARIA design pattern.
                                 </AccordionContent>
@@ -81,10 +81,10 @@ export default function MenuRes({ onClose }) {
                         </Accordion>
 
                     </div>
-                    <div className="lg:w-[90%]  lg:mx-auto md:w-[90%]  md:mx-auto sm:w-[90%]  sm:mx-auto">
+                    <div className="lg:w-[80%]  lg:mx-auto md:w-[90%]  md:mx-auto sm:w-[90%]  sm:mx-auto">
                         <Accordion type="single" collapsible>
                             <AccordionItem value="item-1">
-                                <AccordionTrigger className="lg:text-[24px] lg:py-5 ">COMPANY</AccordionTrigger>
+                                <AccordionTrigger className="lg:text-[24px] lg:py-8 ">COMPANY</AccordionTrigger>
                                 <AccordionContent>
                                     Yes. It adheres to the WAI-ARIA design pattern.
                                 </AccordionContent>
@@ -92,10 +92,10 @@ export default function MenuRes({ onClose }) {
                         </Accordion>
 
                     </div>
-                    <div className="lg:w-[90%]  lg:mx-auto md:w-[90%]  md:mx-auto sm:w-[90%]  sm:mx-auto">
+                    <div className="lg:w-[80%]  lg:mx-auto md:w-[90%]  md:mx-auto sm:w-[90%]  sm:mx-auto">
                         <Accordion type="single" collapsible>
                             <AccordionItem value="item-1">
-                                <AccordionTrigger className="lg:text-[24px] lg:py-5 ">COMPANY</AccordionTrigger>
+                                <AccordionTrigger className="lg:text-[24px] lg:py-8 ">COMPANY</AccordionTrigger>
                                 <AccordionContent>
                                     Yes. It adheres to the WAI-ARIA design pattern.
                                 </AccordionContent>
@@ -132,7 +132,7 @@ export default function MenuRes({ onClose }) {
                 <div className="sm:flex sm:justify-center sm:w-full md:hidden">
                     <Button
                         className="border-2 border-orange-500 main-bg text-white hover:bg-orange-600 px-6 py-7 rounded-full text-lg font-semibold transition duration-300 ease-in-out
-            sm:w-[90%] sm:mt-4 sm:text-center sm:bg-orange-500"
+            "
                     >
                         CONTACT US
                     </Button>
@@ -149,9 +149,8 @@ export default function MenuRes({ onClose }) {
                     <div>
                         <Button
                             className="border-2 border-orange-500 main-bg text-white hover:bg-orange-600 px-6 py-7 rounded-full text-lg font-semibold transition duration-300 ease-in-out
-                xl:text-base xl:px-3 xl:py-5 xl:mr-16
-                lg:bg-orange-500 lg:text-white
-                md:bg-orange-500 sm:hidden md:block"
+                            lg:bg-orange-500
+             "
                         >
                             CONTACT US
                         </Button>

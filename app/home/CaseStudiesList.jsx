@@ -141,14 +141,15 @@ export default function CaseStudiesList() {
         <section className="relative main-bg lg:pb-20 ">
             <div className="flex flex-row pt-20 pl-8 pb-12  md:items-between">
                 <h1 className="2xl:text-6xl text-white xl:text-[56px] max-xl:text-[56px] lg:text-[56px] md:text-[56px] md:w-full sm:text-[24px]">Case Studies</h1>
-                <div className="flex flex-row ml-auto 2xl:space-x-4 
+                <div className="flex flex-row lg:ml-auto xl:space-x-4 
 
-                xl:absolute xl:top-30 xl:flex-row  xl:right-10 
+                xl:absolute xl:-top-52 xl:flex-row  xl:right-10 
+                lg:absolute lg:flex-col lg:justify-center lg:translate-y-[300px] lg:right-0
                 ">
                     <div className="swiper-button-prev  xl:block">
                         <IoIosArrowDropleft className="text-8xl xl:text-6xl  text-gray-100 hover:text-orange-500" />
                     </div>
-                    <div className="swiper-button-next ml-4 xl:block">
+                    <div className="swiper-button-next ml-4 xl:block lg:ml-0">
                         <IoIosArrowDropright className="text-8xl  xl:text-6xl text-gray-100 hover:text-orange-500" />
                     </div>
                 </div>

@@ -54,6 +54,7 @@ export default function VideoCard() {
         <>
             <section className="bg-[#1c1e24] py-12 pl-8 xl:pl-0 lg:pl-8 md:pl-0 xl:pr-0 relative sm:w-[98%] sm:pr-0 sm:pl-0 sm:mx-auto sm:pb-0 md:w-full md:ml-0
             xl:w-[90%]
+            lg:w-[87%]
             ">
                 <Swiper
                     modules={[Navigation]}
@@ -128,7 +129,7 @@ export default function VideoCard() {
                 </Swiper>
 
                 <div className="absolute right-0 top-1/2 transform -translate-y-1/2 flex flex-col space-y-4 sm:hidden md:block md:z-30 md:right-0
-                xl:-right-32
+                xl:-right-32    lg:-right-32
                 ">
                     <div className="swiper-button-next text-8xl text-white">
                         <MdOutlineNavigateNext />

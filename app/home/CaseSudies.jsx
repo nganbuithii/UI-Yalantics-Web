@@ -6,7 +6,7 @@ import { GoArrowDownRight, GoArrowUpRight } from "react-icons/go";
 
 export default function CaseStudies({ title, items = [], className, image }) {
     return (
-        <section className={`hover:bg-[url('https://yalantis.com/wp-content/uploads/2024/03/oxygen.webp')]  group bg-no-repeat bg-center relative border border-orange-100 px-10 py-6 sm:mx-3 xl:mx-0 ${className}`}>
+        <section className={`hover:bg-[url('https://yalantis.com/wp-content/uploads/2024/03/oxygen.webp')]  group bg-no-repeat bg-center relative border border-orange-100 px-10 py-6 sm:mx-3 xl:mx-0 lg:mx-0 ${className}`}>
             <h4 className="font-bold 2xl:text-2xl text-white pt-10 mb-16 tracking-wide leading-10 md:text-[18px] sm:text-xl">{title}</h4>
 
             {items.map((item, index) => (
@@ -23,10 +23,10 @@ export default function CaseStudies({ title, items = [], className, image }) {
             </Button>
             <div>
                 <GoArrowDownRight className="absolute bottom-0 right-20 transform -translate-y-1/2 text-5xl text-orange-600 transition-opacity duration-300 ease-in-out group-hover:opacity-0
-                xl:right-5 xl:text-4xl max-xl:right-5 max-xl:text-4xl
+                xl:right-5 xl:text-4xl 
                 " />
                 <GoArrowUpRight className="absolute bottom-0 right-20 transform -translate-y-1/2 text-5xl text-white opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100
-                  xl:right-5 xl:text-4xl max-xl:right-5 max-xl:text-4xl
+                  xl:right-5 xl:text-4xl 
                 " />
             </div>
         </section>
