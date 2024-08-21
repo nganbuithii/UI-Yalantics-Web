@@ -143,7 +143,7 @@ export default function CaseStudiesList() {
                 <h1 className="2xl:text-6xl text-white xl:text-[56px] max-xl:text-[56px] lg:text-[56px] md:text-[56px] md:w-full sm:text-[24px]">Case Studies</h1>
                 <div className="flex flex-row ml-auto 2xl:space-x-4 
 
-                xl:absolute xl:top-30 xl:flex-row  xl:right-10
+                xl:absolute xl:top-30 xl:flex-row  xl:right-10 
                 ">
                     <div className="swiper-button-prev  xl:block">
                         <IoIosArrowDropleft className="text-8xl xl:text-6xl  text-gray-100 hover:text-orange-500" />

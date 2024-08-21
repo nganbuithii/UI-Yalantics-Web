@@ -126,7 +126,7 @@ export default function HomePage() {
             </section>
 
 
-            <section className="main-bg py-12 pt-40 sm:py-8">
+            <section className="main-bg py-12 pt-40 sm:py-8 xl:pl-3">
                 <h1 className="text-6xl text-white pb-11 px-7 xl:text-[56px]  md:text-[56px] sm:text-2xl sm:pb-1">Video testimonials
                 </h1>
                 <VideoCard />
@@ -270,10 +270,10 @@ export default function HomePage() {
             </section>
 
 
-            <Footer className="lg:hidden 2xl:block md:hidden sm:hidden" />
+            <Footer className="lg:hidden xl:block md:hidden sm:hidden" />
 
             {/* Hiển thị FooterRes khi màn hình nhỏ hơn 1024px (lg) */}
-            <FooterRes className="lg:block 2xl:hidden md:block sm:block" />
+            <FooterRes className="lg:block xl:hidden md:block sm:block" />
         </>
     );
 }

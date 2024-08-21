@@ -75,6 +75,16 @@
   .border-border {
     border-color: var(--border);
   }
+
+  .filter-custom-orange {
+    filter: brightness(0) saturate(100%) invert(48%) sepia(76%) saturate(3770%)
+      hue-rotate(359deg) brightness(102%) contrast(103%);
+  }
+
+  .filter-custom-white {
+    filter: brightness(0) saturate(100%) invert(99%) sepia(2%) saturate(12%)
+      hue-rotate(120deg) brightness(104%) contrast(100%);
+  }
 }
 .main-bg{
   background-color: #1C1E24;
@@ -140,7 +150,36 @@ header hover */
   color: orange;
 }
 /* end header hover */
-
 * {
   box-sizing: border-box;
+}
+.services-item-bg {
+  position: relative;
+  z-index: 1; /* Đảm bảo nội dung có z-index cao hơn lớp phủ */
+  color: white; /* Đảm bảo chữ có màu trắng */
+  overflow: hidden;
+}
+
+.services-item-bg::before {
+  content: "";
+  position: absolute;
+  z-index: 0; /* Lớp phủ nằm dưới nội dung */
+  background-color: #ff6300;
+  filter: blur(80px);
+  border-radius: 50%;
+  top: 120px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 224px;
+  max-height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.services-item-bg:hover::before {
+  visibility: visible;
+  opacity: 0.3; /* Thay đổi giá trị opacity để có độ mờ mong muốn */
+  background-color: #ff6300;
 }

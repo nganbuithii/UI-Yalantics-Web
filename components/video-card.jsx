@@ -52,14 +52,16 @@ export default function VideoCard() {
 
     return (
         <>
-            <section className="bg-[#1c1e24] py-12 pl-8 pr-32 relative  sm:w-[98%] sm:pr-0 sm:pl-0 sm:mx-auto sm:pb-0 md:w">
+            <section className="bg-[#1c1e24] py-12 pl-8 xl:pl-0 lg:pl-8 md:pl-0 xl:pr-0 relative sm:w-[98%] sm:pr-0 sm:pl-0 sm:mx-auto sm:pb-0 md:w-full md:ml-0
+            xl:w-[90%]
+            ">
                 <Swiper
                     modules={[Navigation]}
                     slidesPerView={3}
                     spaceBetween={30}
-                    slidesPerGroup={3} // Di chuyển 3 slide mỗi lần
-                    loop={true} // Bật tính năng lặp lại
-                    className="sm:w-full md:w-[90%] md:justify-start md:items-start md:mr-10"
+                    slidesPerGroup={3}
+                    loop={true}
+                    className="sm:w-full md:w-full"
                     navigation={{
                         nextEl: '.swiper-button-next',
                         prevEl: '.swiper-button-prev',
@@ -68,27 +70,27 @@ export default function VideoCard() {
                         640: {
                             slidesPerView: 1,
                             spaceBetween: 20,
-                            slidesPerGroup: 1, // Di chuyển 1 slide mỗi lần cho màn hình nhỏ
-                        },
-                        1280: {
-                            slidesPerView: 3,
-                            spaceBetween: 20,
-                            slidesPerGroup: 3, // Di chuyển 1 slide mỗi lần cho màn hình nhỏ
+                            slidesPerGroup: 1,
                         },
                         768: {
                             slidesPerView: 2,
                             spaceBetween: 30,
-                            slidesPerGroup: 2, // Di chuyển 2 slide mỗi lần cho màn hình trung bình
+                            slidesPerGroup: 2,
                         },
                         1024: {
                             slidesPerView: 2,
                             spaceBetween: 40,
-                            slidesPerGroup: 2, // Di chuyển 3 slide mỗi lần cho màn hình lớn
+                            slidesPerGroup: 2,
+                        },
+                        1280: {
+                            slidesPerView: 3,
+                            spaceBetween: 20,
+                            slidesPerGroup: 3,
                         },
                         1535: {
                             slidesPerView: 3,
                             spaceBetween: 40,
-                            slidesPerGroup: 3, // Di chuyển 3 slide mỗi lần cho màn hình lớn
+                            slidesPerGroup: 3,
                         },
                     }}
                 >
@@ -105,16 +107,15 @@ export default function VideoCard() {
                                             className="w-full object-cover"
                                         />
                                     </div>
-                                    <div className="absolute flex flex-row bottom-0 p-4
-                                    xl:-bottom-4 max-xl:-bottom-4 xl:p-1 max-xl:p-1">
+                                    <div className="absolute flex flex-row bottom-0 p-4 xl:-bottom-4 max-xl:-bottom-4 xl:p-1 max-xl:p-1">
                                         <div className="flex items-center justify-center bg-opacity-50 rounded-full p-2">
-                                            <MdPlayCircleFilled className="text-white text-4xl
-                                            
-                                            " />
+                                            <MdPlayCircleFilled className="text-white text-4xl" />
                                         </div>
                                         <div className="p-4 bg-transparent">
                                             <h3 className="text-xl font-bold text-white">{testimonial.name}</h3>
-                                            <p className="2xl:text-lg font-semibold text-gray-400 xl:text-[16px] max-xl:text-[16px]">{testimonial.title}</p>
+                                            <p className="2xl:text-lg font-semibold text-gray-400 xl:text-[16px] max-xl:text-[16px]">
+                                                {testimonial.title}
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -126,7 +127,9 @@ export default function VideoCard() {
                     ))}
                 </Swiper>
 
-                <div className="absolute right-0 top-1/2 transform -translate-y-1/2 flex flex-col space-y-4 sm:hidden md:block md:z-30 lg:-right-5 ">
+                <div className="absolute right-0 top-1/2 transform -translate-y-1/2 flex flex-col space-y-4 sm:hidden md:block md:z-30 md:right-0
+                xl:-right-32
+                ">
                     <div className="swiper-button-next text-8xl text-white">
                         <MdOutlineNavigateNext />
                     </div>
