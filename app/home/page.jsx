@@ -52,11 +52,9 @@ export default function HomePage() {
                     </div>
                     <div className=" lg:justify-center   xl:justify-start md:justify-center md:flex md:items-center sm:flex sm:justify-center sm:items-center
                     lg:flex ">
-                        <Button className="mt-10 border-2 border-orange-500 bg-orange-500 text-white hover:bg-orange-600 2xl:px-6  rounded-full text-lg font-semibold transition duration-300 ease-in-out 2xl:mx-10 2xl:py-8  md:text-center md:py-6 md:px-8
-                    xl:text-[14px] 
-                    xl:py-4  2xl:text-xl 
-                    lg:py-6 
-                    lg:text-base sm:text-center sm:py-6 sm:px-6
+                        <Button className="mt-10 border-2 border-orange-500 bg-orange-500 text-white hover:bg-orange-600 rounded-full text-lg font-semibold transition duration-300 ease-in-out 
+                        xl:text-base xl:px-8 xl:py-6
+                    
                 
                     ">
                             CONTACT US
@@ -64,16 +62,16 @@ export default function HomePage() {
                     </div>
 
                 </div>
-                <div className="2xl:w-2/5 lg:hidden
-                2xl:inline-block md:hidden sm:hidden
+                <div className="2xl:w-2/5 hidden lg:block
                 ">
                     <Image src="/images/y.png" className=" 2xl:w-[620px] 2xl:h-[760px] xl:w-[600px]  xl:h-[640px]  xl:absolute xl:right-[100px] xl:top-0
                                 " alt="y" width={620} height={620}></Image>
                 </div>
             </section>
 
-            <section className="flex flex-row flex-wrap 2xl:flex-nowrap main-bg xl:justify-center xl:pt-44 2xl:justify-center lg:flex-wrap md:flex-wrap sm:flex-wrap">
-                <div className="p-5 md:p-0 xl:p-3 xl:w-[49%] lg:w-[49%] md:w-[48%] sm:w-full md:mx-auto md:pb-2">
+            <section className="flex flex-row flex-wrap xl:flex-nowrap main-bg xl:pt-24">
+                {/* <div className="p-5 md:p-0 xl:p-3 xl:w-[49%] lg:w-[49%] md:w-[48%] sm:w-full md:mx-auto md:pb-2"> */}
+                <div className="xl:w-1/4 xl:mx-2">
                     <CardReadMore
                         title={"Developteam augement tation"}
                         items={[
@@ -86,7 +84,7 @@ export default function HomePage() {
                         ]}
                     />
                 </div>
-                 <div className="p-5 md:p-0 xl:p-3 xl:w-[49%] lg:w-[49%] md:w-[48%] sm:w-full md:mx-auto ">
+                <div className="xl:w-1/4 xl:mx-2">
                     <CardReadMore
                         title={"Developteam augement tation"}
                         items={[
@@ -99,7 +97,7 @@ export default function HomePage() {
                         ]}
                     />
                 </div>
-                 <div className="p-5 md:p-0 xl:p-3 xl:w-[49%] lg:w-[49%] md:w-[48%] sm:w-full md:mx-auto ">
+                <div className="xl:w-1/4 xl:mx-2">
                     <CardReadMore
                         title={"Developteam augement tation"}
                         items={[
@@ -112,7 +110,7 @@ export default function HomePage() {
                         ]}
                     />
                 </div>
-                 <div className="p-5 md:p-0 xl:p-3 xl:w-[49%] lg:w-[49%] md:w-[48%] sm:w-full md:mx-auto ">
+                <div className="xl:w-1/4 xl:mx-2">
                     <CardReadMore
                         title={"Developteam augement tation"}
                         items={[
@@ -135,13 +133,13 @@ export default function HomePage() {
             </section>
             <AboutUs />
             <section className="pb-40">
-                <div className="flex flex-row lg:justify-around 2xl:justify-around lg:flex-wrap 2xl:flex-nowrap md:flex-wrap md:justify-around sm:flex-wrap sm:justify-around">
-                    <Image src="/images/logo.svg" width={150} height={150} className="lg:w-[200px] 2xl:w-[150px] md:w-[180px]"></Image>
-                    <Image src="/images/logo.svg" width={150} height={150} className="lg:w-[200px] 2xl:w-[150px] md:w-[180px]"></Image>
-                    <Image src="/images/logo.svg" width={150} height={150} className="lg:w-[200px] 2xl:w-[150px] md:w-[180px]"></Image>
-                    <Image src="/images/logo.svg" width={150} height={150} className="lg:w-[200px] 2xl:w-[150px] md:w-[180px]"></Image>
-                    <Image src="/images/logo.svg" width={150} height={150} className="lg:w-[200px] 2xl:w-[150px] md:w-[180px]"></Image>
-                    <Image src="/images/logo.svg" width={150} height={150} className="lg:w-[200px] 2xl:w-[150px] md:w-[180px]"></Image>
+                <div className="flex flex-row lg:justify-around 2xl:justify-around lg:flex-wrap xl:flex-nowrap md:flex-wrap md:justify-around sm:flex-wrap sm:justify-around">
+                    <Image src="/images/logo.svg" width={150} height={150} className="lg:w-[200px] xl:w-[150px] md:w-[180px]"></Image>
+                    <Image src="/images/logo.svg" width={150} height={150} className="lg:w-[200px] xl:w-[150px] md:w-[180px]"></Image>
+                    <Image src="/images/logo.svg" width={150} height={150} className="lg:w-[200px] xl:w-[150px] md:w-[180px]"></Image>
+                    <Image src="/images/logo.svg" width={150} height={150} className="lg:w-[200px] xl:w-[150px] md:w-[180px]"></Image>
+                    <Image src="/images/logo.svg" width={150} height={150} className="lg:w-[200px] xl:w-[150px] md:w-[180px]"></Image>
+                    <Image src="/images/logo.svg" width={150} height={150} className="lg:w-[200px] xl:w-[150px] md:w-[180px]"></Image>
                     <Image src="/images/logo.svg" width={150} height={150} className="lg:w-[200px] 2xl:w-[150px] md:w-[180px]"></Image>
                 </div>
             </section>
@@ -150,12 +148,12 @@ export default function HomePage() {
 
             <section className="p-8">
                 <Banner className="bg-gradient" title="NOT SURE WHICH ENGAGEMENT MODEL IS BEST FOR MEETING YOUR BUSINESS OBJECTIVES?
-" content="Let us help you decide." name="CONTACT US" />
+" content="Let us help you decide." name="BOOK A CALL" />
             </section>
 
             {/* FAQ */}
             <section className="bg-pink-100 justify-center pb-20">
-                <h1 className=" text-center 2xl:text-7xl text-black font-light pb-8 pt-20 lg:text-[56px]sm:text-lg sm:pt-10">FAQ</h1>
+                <h1 className=" text-center xl:text-7xl text-black font-light pb-8 pt-20 lg:text-[56px]sm:text-lg sm:pt-10">FAQ</h1>
                 <FAQ title="How does your software developer company ensure product security?
                 " content="Our software development agency has obtained ISO 27001 and ISO 9001 certifications for software development groups. These certifications demonstrate that Yalantis’ management and development processes comply with international quality and security standards introduced by the International Organization for Standardization (ISO).
                 
@@ -218,14 +216,14 @@ export default function HomePage() {
                 "/>
             </section>
 
-            <section className="flex flex-row lg:bg-[url('/images/bg-foot.png')] bg-cover bg-center 2xl:pt-20 sm:bg-none sm:bg-[#1C1E24]
-            xl:pt-15 xl:px-0 lg:flex-wrap lg:px-5 2xl:flex-nowrap md:flex-wrap sm:flex-wrap">
-                <div className="2xl:w-1/2 bg-white 2xl:p-6 xl:rounded-lg shadow-lg xl:mx-10 lg:w-full lg:p-2
+            <section className="flex flex-row lg:bg-[url('/images/bg-foot.png')] bg-cover bg-center xl:pt-20 sm:bg-none sm:bg-[#1C1E24]
+            xl:pt-15 xl:px-0 lg:flex-wrap lg:px-5 xl:flex-nowrap md:flex-wrap sm:flex-wrap">
+                <div className="xl:w-1/2 bg-white xl:p-6 xl:rounded-lg shadow-lg xl:mx-10 lg:w-full lg:p-2
                 md:w-full sm:w-full sm:mx-0 sm:rounded-none">
                     <ContactForm />
                 </div>
 
-                <div className="2xl:w-1/2 text-white lg:w-full md:w-full lg:pt-10 sm:px-5">
+                <div className="xl:w-1/2 text-white lg:w-full md:w-full lg:pt-10 sm:px-5">
                     <p className="font-bold text-gray-600 text-xl md:pt-8 sm:pl-5 sm:pb-5 sm:pt-5">Yalantis in brief</p>
                     <div className="flex lg:flex-row justify-around sm:flex-col">
                         <div>

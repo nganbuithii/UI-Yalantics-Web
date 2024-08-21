@@ -70,6 +70,11 @@ export default function VideoCard() {
                             spaceBetween: 20,
                             slidesPerGroup: 1, // Di chuyển 1 slide mỗi lần cho màn hình nhỏ
                         },
+                        1280: {
+                            slidesPerView: 3,
+                            spaceBetween: 20,
+                            slidesPerGroup: 3, // Di chuyển 1 slide mỗi lần cho màn hình nhỏ
+                        },
                         768: {
                             slidesPerView: 2,
                             spaceBetween: 30,
