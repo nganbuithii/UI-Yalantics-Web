@@ -101,11 +101,8 @@ export default function Header() {
                             <div>
                                 <Button
                                     onClick={handleClick}
-                                    className="border-2 border-orange-500 main-bg text-white hover:bg-orange-600 2xl:px-6 2xl:py-7 rounded-full 2xl:text-lg font-semibold transition duration-300 ease-in-out
-        xl:text-base xl:px-3 xl:py-5 xl:mr-16
-        lg:bg-orange-500 lg:text-white
-        md:bg-transparent md:text-orange-500 md:pb-5 md:text-center md:block md:hover:bg-transparent md:px-8 
-        sm:flex sm:items-center sm:justify-center sm:text-center sm:w-full sm:py-5">
+                                    className="border-2 border-orange-500 main-bg text-white hover:bg-orange-600 px-6 py-7 rounded-full text-lg font-semibold transition duration-300 ease-in-out
+       ">
                                     CONTACT US
                                 </Button>
 

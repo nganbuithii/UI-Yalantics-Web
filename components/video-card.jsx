@@ -121,7 +121,7 @@ export default function VideoCard() {
                     ))}
                 </Swiper>
 
-                <div className="absolute right-0 top-1/2 transform -translate-y-1/2 flex flex-col space-y-4 sm:hidden md:block md:z-30 lg:-right-5">
+                <div className="absolute right-0 top-1/2 transform -translate-y-1/2 flex flex-col space-y-4 sm:hidden md:block md:z-30 lg:-right-5 ">
                     <div className="swiper-button-next text-8xl text-white">
                         <MdOutlineNavigateNext />
                     </div>
