@@ -110,6 +110,11 @@ export default function VideoCard() {
                             spaceBetween: 20,
                             slidesPerGroup: 1,
                         },
+                        400: {
+                            slidesPerView: 1,
+                            spaceBetween: 0,
+                            slidesPerGroup: 1,
+                        },
                         768: {
                             slidesPerView: 2,
                             spaceBetween: 30,
