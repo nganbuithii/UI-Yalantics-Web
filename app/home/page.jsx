@@ -76,10 +76,11 @@ export default function HomePage() {
                 </div>
             </section>
 
-            <section className="xl:flex xl:flex-row flex-wrap xl:flex-nowrap main-bg xl:pt-24 xl:pb-[80px] lg:grid lg:grid-cols-2 lg:gap-4 lg:px-5 lg:pb-[60px] md:pb-[60px]
+            <section className=" flex-wrap xl:flex-nowrap main-bg xl:pt-24 xl:pb-[80px] lg:grid lg:grid-cols-2 lg:gap-4 lg:px-5 lg:pb-[60px] md:pb-[60px]
             md:grid md:grid-cols-2 md:gap-3 md:px-5 
+            xl:grid xl:grid-cols-4 xl:gap-3 xl:px-3 
             ">
-                <div className="xl:w-1/4 xl:mx-2 lg:w-full lg:mx-0 sm:px-4 sm:pb-4">
+                <div className=" lg:w-full lg:mx-0 sm:px-4 sm:pb-4">
                     <CardReadMore
                         title={"Developteam augement tation"}
                         items={[
@@ -92,7 +93,7 @@ export default function HomePage() {
                         ]}
                     />
                 </div>
-                <div className="xl:w-1/4 xl:mx-2 lg:w-full lg:mx-0 sm:px-4 sm:pb-4">
+                <div className=" lg:w-full lg:mx-0 sm:px-4 sm:pb-4">
                     <CardReadMore
                         title={"Developteam augement tation"}
                         items={[
@@ -105,7 +106,7 @@ export default function HomePage() {
                         ]}
                     />
                 </div>
-                <div className="xl:w-1/4 xl:mx-2 lg:w-full lg:mx-0 sm:px-4 sm:pb-4">
+                <div className=" lg:w-full lg:mx-0 sm:px-4 sm:pb-4">
                     <CardReadMore
                         title={"Developteam augement tation"}
                         items={[
@@ -118,7 +119,7 @@ export default function HomePage() {
                         ]}
                     />
                 </div>
-                <div className="xl:w-1/4 xl:mx-2 lg:w-full lg:mx-0 sm:px-4 sm:pb-4">
+                <div className=" lg:w-full lg:mx-0 sm:px-4 sm:pb-4">
                     <CardReadMore
                         title={"Developteam augement tation"}
                         items={[

@@ -41,7 +41,7 @@ export default function MenuRes({ onClose }) {
                             />
                         </Link>
                     </div>
-                    <div className="lg:pr-0 md:pr-10 sm:pr-20">
+                    <div className="lg:pr-5 md:pr-10 sm:pr-20 ">
                         <FaXmark onClick={onClose} className="text-5xl cursor-pointer lg:inline-block md:inline-block" />
                     </div>
                 </div>

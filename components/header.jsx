@@ -60,7 +60,7 @@ export default function Header() {
                                     alt="Logo"
                                     width={130}
                                     height={130}
-                                    className="object-contain 2xl:w-[130px] xl:w-[90px] sm:w-[80px]"
+                                    className="object-contain 2xl:w-[130px] xl:w-[90px] sm:w-[80px] lg:w-[230px]"
                                 />
                             </Link>
                         </div>
@@ -101,7 +101,7 @@ export default function Header() {
                             </nav>
                         </div>
                         <div className="ml-15 lg:flex flex-row md:flex md:flex-row
-                        xl:w-[15%] lg:w-[15%] 
+                        xl:w-[25%] lg:w-[15%] xl:ml-0
                         
                         ">
                             <div className='sm:hidden md:block'>
