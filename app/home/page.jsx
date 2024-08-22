@@ -70,7 +70,7 @@ export default function HomePage() {
                     </div>
 
                 </div>
-                <div className="2xl:w-2/5 xl:block lg:hidden  md:hidden sm:hidden xs:hidden
+                <div className="2xl:w-2/5 xl:block lg:hidden  md:hidden sm:hidden xs:hidden -z-20 opacity-35
                 ">
                     <Image src="/images/y.png" className=" 2xl:w-[620px] 2xl:h-[760px] xl:w-[600px]  xl:h-[640px]  xl:absolute xl:right-[100px] xl:top-0 
                                 " alt="y" width={620} height={620}></Image>
