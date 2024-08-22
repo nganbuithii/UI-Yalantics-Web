@@ -101,7 +101,7 @@ export default function Header() {
                             </nav>
                         </div>
                         <div className="ml-15 lg:flex flex-row md:flex md:flex-row
-                        xl:w-[25%] lg:w-[15%] xl:ml-0
+                        xl:w-[15%] lg:w-[15%] xl:ml-0
                         
                         ">
                             <div className='sm:hidden md:block'>
