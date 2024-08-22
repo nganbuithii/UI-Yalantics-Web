@@ -194,7 +194,7 @@ export default function CaseStudiesList() {
                     prevEl: '.swiper-button-prev'
                 }}
                 modules={[Navigation]}
-                className="flex flex-row case-studies lg:w-[80%] lg:justify-normal lg:pb-20 md:w-[80%] ml-auto md:justify-start md:ml-[10px] xl:w-full xl:ml-0 md:pt-10"
+                className="flex flex-row case-studies lg:w-[80%] lg:justify-normal lg:pb-20 md:w-[80%] ml-auto md:justify-start md:ml-[10px] xl:w-full xl:ml-0 md:pt-10  case-studies-list"
                 breakpoints={{
                     1024: {
                         slidesPerView: 2,

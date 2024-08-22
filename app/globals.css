@@ -183,3 +183,21 @@ header hover */
   opacity: 0.3; /* Thay đổi giá trị opacity để có độ mờ mong muốn */
   background-color: #ff6300;
 }
+
+
+.case-studies-list {
+  position: relative; /* Đảm bảo phần tử chứa có vị trí tương đối */
+  overflow: hidden; /* Đảm bảo không có phần tử nào tràn ra ngoài phần tử chứa */
+  margin-right:0;
+}
+
+.case-studies-list::before {
+  content: "";
+  position: absolute;
+  right: 0; /* Điều chỉnh lại vị trí */
+  top: 0;
+  background: linear-gradient(270deg, #1c1e24 14.3%, rgba(28, 30, 36, 0) 100%);
+  height: 100%;
+  width: 30%; /* Điều chỉnh kích thước nếu cần */
+  z-index: 2;
+}
