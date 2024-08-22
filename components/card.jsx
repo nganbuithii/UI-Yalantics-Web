@@ -28,8 +28,9 @@ export default function CardReadMore({ title, items = [] }) {
             xl:text-white
             xl:pb-10 xl:pt-14 md:text-orange-500
             sm:text-orange-500 
+            xs:text-orange-500
             ">
-                READ MORE <FaArrowRight className="ml-5 group-hover:ml-10 md:text-orange-500 sm:text-orange-500 xl:text-white xl:group-hover:text-orange-500" />
+                READ MORE <FaArrowRight className="ml-5 group-hover:ml-10 md:text-orange-500 sm:text-orange-500 xl:text-white xl:group-hover:text-orange-500 xs:text-orange-500" />
             </Button>
         </section>
     );

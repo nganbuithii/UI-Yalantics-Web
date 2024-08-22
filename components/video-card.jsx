@@ -3,8 +3,17 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { MdPlayCircleFilled, MdOutlineNavigateNext } from "react-icons/md";
 import { IoChevronBackOutline } from "react-icons/io5";
 import { Navigation } from "swiper/modules";
+import { useEffect, useState } from "react";
 
 export default function VideoCard() {
+    const [swiper, setSwiper] = useState(null);
+    const [activeIndex, setActiveIndex] = useState(0);
+    const [currentPage, setCurrentPage] = useState(1);
+    const [totalPages, setTotalPages] = useState(0);
+  
+
+    
+
     const testimonials = [
         {
             name: "Simon Jones",
@@ -49,7 +58,18 @@ export default function VideoCard() {
             feedback: "Yalantis has been a great fit for us because of their experience, responsiveness, value, and time to market. From the very start, they’ve been able to staff an effective development team in no time and perform as expected.",
         },
     ];
+    useEffect(() => {
+        setTotalPages(testimonials.length); // Cập nhật totalPages khi testimonials thay đổi
+    }, [testimonials]);
 
+    useEffect(() => {
+        if (swiper) {
+            swiper.on('slideChange', () => {
+                setActiveIndex(swiper.realIndex);
+                setCurrentPage(swiper.realIndex + 1);
+            });
+        }
+    }, [swiper]);
     return (
         <>
             <section className="bg-[#1c1e24] py-12 pl-8 xl:pl-0 lg:pl-8 md:pl-0 xl:pr-0 relative sm:w-[98%] sm:pr-0 sm:pl-0 sm:mx-auto sm:pb-0  
@@ -57,6 +77,21 @@ export default function VideoCard() {
             lg:w-[87%]
             md:w-[84%] md:ml-3
             ">
+                <div className="text-white md:hidden pl-14">
+                    {currentPage}/{totalPages}
+                </div>
+
+                {/*  progress bar */}
+                <div className="md:hidden  w-4/5 mx-auto mb-5 h-1 bg-gray-700 flex">
+                    {testimonials.map((_, index) => (
+                        <div
+                            key={index}
+                            className={`flex-1 h-full transition-all duration-300 ${index === activeIndex ? 'bg-white' : 'bg-gray-500'
+                                }`}
+                        />
+                    ))}
+                </div>
+
                 <Swiper
                     modules={[Navigation]}
                     slidesPerView={3}
@@ -68,6 +103,7 @@ export default function VideoCard() {
                         nextEl: '.swiper-button-next',
                         prevEl: '.swiper-button-prev',
                     }}
+                    onSwiper={(swiperInstance) => setSwiper(swiperInstance)}
                     breakpoints={{
                         640: {
                             slidesPerView: 1,
